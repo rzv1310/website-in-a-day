@@ -38,6 +38,9 @@ const StepsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
+          <p className="text-primary font-display text-2xl md:text-3xl mb-8">
+            Am construit <span className="font-bold">125+</span> site-uri într-o zi!
+          </p>
           <p className="text-base tracking-[0.3em] uppercase text-primary mb-4 font-body">
             Procesul
           </p>

@@ -84,7 +84,7 @@ const PackagesSection = () => {
           preRecap={[
             "Ce primești aici NU e doar 'un site frumos'.",
             "Și NU e din categoria 'Ai un vecin care știe un băiat care face site-uri'!",
-            "Ce primești aici este top local SEO, tehnic impecabil, desenat de la zero pentru businessul tău și focusat pe apeluri și programări — pentru a converti vizitatorii în clienți.",
+            "Ce primești aici este top local SEO, tehnic impecabil, desenat de la zero pentru businessul tău și focusat pe apeluri și programări - pentru a converti vizitatorii în clienți.",
           ]}
           recap="Ești gata pentru noua ta imagine digitală?"
         />

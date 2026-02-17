@@ -50,7 +50,7 @@ const FaqSection = () => {
           className="text-center mb-12"
         >
           <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">
-            Cele mai frecvente întrebări
+            FAQs
           </h2>
           <div className="divider-gold w-16 mx-auto mb-6" />
           <p className="text-foreground/80 font-light text-[19px] leading-relaxed">

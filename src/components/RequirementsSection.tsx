@@ -3,10 +3,10 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { Camera, MapPin, Phone, Users, List, DollarSign, Building } from "lucide-react";
 
 const items = [
-  { icon: Building, text: "Nume Business (+ poze, dacă există)" },
+  { icon: Building, text: "Nume Business (+ poze)" },
   { icon: MapPin, text: "Adresa completă" },
   { icon: Phone, text: "Telefon" },
-  { icon: Users, text: "Echipa (specializări + poze, dacă există)" },
+  { icon: Users, text: "Echipa (specializări + poze)" },
   { icon: List, text: "Lista servicii (+ detalii)" },
   { icon: DollarSign, text: "Lista Prețuri" },
   { icon: Camera, text: "Detalii business (istoric, etc.)" },
@@ -52,7 +52,7 @@ const RequirementsSection = () => {
         <div className="overflow-hidden mt-12">
           <motion.div
             animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: isMobile ? 5 : 15, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: isMobile ? 3 : 15, repeat: Infinity, ease: "linear" }}
             className="whitespace-nowrap flex gap-12"
           >
             {[...Array(10)].map((_, i) => (

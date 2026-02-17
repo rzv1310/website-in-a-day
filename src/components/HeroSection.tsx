@@ -64,7 +64,7 @@ const HeroSection = () => {
           <p className="text-[19px] text-foreground font-body leading-relaxed">
             Prin procesul nostru optimizat de design, poți avea un site web complet personalizat în
             doar{" "}
-            <span className="italic">o singură zi</span>.
+            <span className="italic font-bold">o singură zi</span>.
           </p>
         </motion.div>
       </div>

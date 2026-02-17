@@ -22,7 +22,7 @@ const HeroSection = () => {
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-foreground">
             Ești pregătit pentru aventura
             <br className="hidden md:block" />
-            <span className="text-gradient-gold italic">'website in one day'</span> ?
+            <span className="text-gradient-gold italic whitespace-nowrap">'website in one day' ?</span>
           </h1>
           <div className="divider-gold w-24 mx-auto my-8" />
         </motion.div>

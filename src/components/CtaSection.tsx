@@ -15,12 +15,12 @@ const CtaSection = () => {
           <span className="text-gradient-gold">noua ta imagine digitală</span>?
         </h2>
         <div className="divider-gold w-16 mx-auto my-8" />
-        <p className="text-muted-foreground font-light mb-10 text-base">
+        <p className="text-muted-foreground font-light mb-10 text-lg">
           Hai să vorbim. Primul pas e un simplu apel.
         </p>
         <a
           href="#"
-          className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-base hover:opacity-90 transition-opacity"
+          className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-lg hover:opacity-90 transition-opacity"
         >
           Programează un apel
         </a>

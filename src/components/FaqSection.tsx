@@ -15,7 +15,8 @@ const faqs = [
   },
   {
     question: "Mai aveți și alte pachete de website?",
-    answer: `Da! Avem și proiecte custom, pentru business-uri care au nevoie de un site mai amplu, cu impact mai mare și funcționalități avansate. Spune-ne ce ai în minte și îți propunem un plan potrivit. Deschide aici whatsapp.`,
+    answer: `Da! Avem și proiecte custom, pentru business-uri care au nevoie de un site mai amplu, cu impact mai mare și funcționalități avansate. Spune-ne ce ai în minte și îți propunem un plan potrivit.`,
+    hasWhatsappLink: true,
   },
   {
     question: "Cu cât timp înainte ar trebui să-mi programez ziua lansării?",
@@ -54,7 +55,7 @@ const FaqSection = () => {
           <div className="divider-gold w-16 mx-auto mb-6" />
           <p className="text-foreground/80 font-light text-[19px] leading-relaxed">
             Mai jos găsești cele mai întâlnite întrebări. Dacă nu vezi răspunsul pe care îl cauți,{" "}
-            <a href="#" className="underline text-primary font-medium">
+            <a href="https://wa.me/40742702982" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#25D366] text-white font-medium px-3 py-1 rounded-md no-underline hover:opacity-90 transition-opacity text-[16px]">
               scrie-ne în whatsapp aici
             </a>{" "}
             și îți răspundem cu drag!
@@ -81,6 +82,11 @@ const FaqSection = () => {
               <p className="text-foreground/80 font-body text-[19px] leading-relaxed whitespace-pre-line">
                 {faq.answer}
               </p>
+              {(faq as any).hasWhatsappLink && (
+                <a href="https://wa.me/40742702982" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#25D366] text-white font-medium px-3 py-1 rounded-md no-underline hover:opacity-90 transition-opacity text-[16px] mt-2 self-start">
+                  Deschide WhatsApp
+                </a>
+              )}
             </motion.div>
           ))}
         </div>

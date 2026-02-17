@@ -1,15 +1,9 @@
 import { motion } from "framer-motion";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 const faqs = [
   {
     question: "Trebuie să fiu disponibil(ă) în ziua lansării?",
-    answer: `Da, va trebui să fii disponibil(ă) în ziua respectivă. Nu trebuie să stai lipit(ă) de laptop toată ziua, dar e important să ai telefonul aproame ca să poți răspunde rapid dacă apar întrebări sau avem nevoie de feedback.\n\nTe rugăm să-ți rezervi o fereastră liberă spre finalul zilei, după ora 15:00 (când îți prezentăm site-ul și facem reviziile).`,
+    answer: `Da, va trebui să fii disponibil(ă) în ziua respectivă. Nu trebuie să stai lipit(ă) de laptop toată ziua, dar e important să ai telefonul aproape ca să poți răspunde rapid dacă apar întrebări sau avem nevoie de feedback.\n\nTe rugăm să-ți rezervi o fereastră liberă spre finalul zilei, după ora 15:00 (când îți prezentăm site-ul și facem reviziile).`,
   },
   {
     question: "Există costuri suplimentare?",
@@ -56,7 +50,7 @@ const FaqSection = () => {
           </p>
         </motion.div>
 
-        <Accordion type="single" collapsible className="space-y-4">
+        <div className="space-y-4">
           {faqs.map((faq, i) => (
             <motion.div
               key={i}
@@ -64,21 +58,17 @@ const FaqSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
+              className="bg-white rounded-sm shadow-sm p-6"
             >
-              <AccordionItem
-                value={`item-${i}`}
-                className="bg-white rounded-sm border-none shadow-sm px-6"
-              >
-                <AccordionTrigger className="text-foreground font-display text-base md:text-lg font-semibold text-left py-5 hover:no-underline">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-foreground/80 font-body text-base leading-relaxed pb-5 whitespace-pre-line">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
+              <h3 className="font-display text-base md:text-lg font-semibold text-foreground mb-3">
+                {faq.question}
+              </h3>
+              <p className="text-foreground/80 font-body text-base leading-relaxed whitespace-pre-line">
+                {faq.answer}
+              </p>
             </motion.div>
           ))}
-        </Accordion>
+        </div>
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import oanaImg from "@/assets/Oana.png";
 import andreeaImg from "@/assets/Andreea.png";
 import johnImg from "@/assets/john.png";
-import echipaImg from "@/assets/echipa_seo_doctor.png";
+
 
 const team = [
   { name: "Oana", role: "Head Designer", img: oanaImg },
@@ -29,19 +29,6 @@ const TeamSection = () => {
           <div className="divider-gold w-16 mx-auto mt-6" />
         </motion.div>
 
-        {/* Team photo */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-8"
-        >
-          <img
-            src={echipaImg}
-            alt="Echipa Website in One Day"
-            className="w-full md:max-w-md max-w-2xl mx-auto rounded-sm shadow-gold"
-          />
-        </motion.div>
 
         {/* First paragraph - under team photo */}
         <motion.div

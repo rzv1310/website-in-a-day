@@ -7,7 +7,7 @@ const faqs = [
   },
   {
     question: "Există costuri suplimentare?",
-    answer: `Da. Ai nevoie de un domeniu și de găzduire (hosting). Dacă nu vrei stress, ne ocupăm noi de tot, inclusiv suport tehnic permanent, pentru doar 100 lei pe lună.`,
+    answer: `Da.\nAi nevoie de un domeniu și de găzduire (hosting).\nDacă nu vrei stress, ne ocupăm noi de tot, inclusiv suport tehnic permanent, pentru doar 100 lei pe lună.`,
   },
   {
     question: "Oferiți plata în rate?",

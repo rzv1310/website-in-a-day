@@ -132,7 +132,7 @@ const TeamSection = () => {
             href="#pachete"
             className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-base hover:opacity-90 transition-opacity"
           >
-            Vreau Site !
+            Vreau Site in 24 de ore !
           </a>
         </motion.div>
       </div>

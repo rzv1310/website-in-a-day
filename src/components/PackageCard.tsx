@@ -11,6 +11,7 @@ interface PackageCardProps {
   pages: string[];
   legalPages?: string[];
   included: string[];
+  preRecap?: string[];
   recap: string;
   highlight?: boolean;
 }
@@ -25,6 +26,7 @@ const PackageCard = ({
   pages,
   legalPages,
   included,
+  preRecap,
   recap,
   highlight = false,
 }: PackageCardProps) => {
@@ -104,10 +106,17 @@ const PackageCard = ({
         </div>
       </div>
 
-      {/* Recap */}
       <div className="border-t border-gold pt-8 text-center">
-        <p className="text-foreground/80 font-light italic font-display leading-relaxed mb-8 max-w-lg mx-auto">
-          {recap}
+        {preRecap && preRecap.length > 0 && (
+          <div className="mb-8 space-y-2">
+            {preRecap.map((line, i) => (
+              <p key={i} className="text-foreground/80 font-light italic font-display leading-relaxed text-base">
+                {line}
+              </p>
+            ))}
+          </div>
+        )}
+        <p className="text-foreground/80 font-light italic font-display leading-relaxed mb-8 max-w-lg mx-auto text-base">
         </p>
         <div className="mb-2">
           <span className="text-base text-muted-foreground uppercase tracking-wider font-body">

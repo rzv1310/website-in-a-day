@@ -50,12 +50,12 @@ const PackagesSection = () => {
           highlight
           tier="Pachet Platinum (+1 zi)"
           title="Ce Primești"
-          subtitle="Totul din Pachetul Gold +"
-          description="Ce primești aici NU e doar 'un site frumos' și NU e din categoria 'Ai un vecin care știe un băiat care face site-uri'! Ce primești aici este top local SEO, tehnic impecabil, desenat de la zero pentru businessul tău și focusat pe apeluri și programări — pentru a converti vizitatorii în clienți."
+          description=""
           price="1.297 €"
           optional="Opțional, fără bătăi de cap după 12 luni: Nume domeniu + Găzduire + suport tehnic + security updates = 100 lei/lună."
           pages={[]}
           included={[
+            "Totul din Pachetul Gold +",
             "Pagină Blog (cu 4 articole optimizate SEO incluse).",
             "Pagini dedicate Servicii în website (4-10).",
             "Creare și optimizare completă Google Business Profile (maps).",
@@ -70,6 +70,11 @@ const PackagesSection = () => {
             "Nume domeniu (1 an).",
             "Găzduire domeniu (1 an).",
             "Mentenanță tehnică (1 an).",
+          ]}
+          preRecap={[
+            "Ce primești aici NU e doar 'un site frumos'.",
+            "Și NU e din categoria 'Ai un vecin care știe un băiat care face site-uri'!",
+            "Ce primești aici este top local SEO, tehnic impecabil, desenat de la zero pentru businessul tău și focusat pe apeluri și programări — pentru a converti vizitatorii în clienți.",
           ]}
           recap="Ești gata pentru noua ta imagine digitală?"
         />

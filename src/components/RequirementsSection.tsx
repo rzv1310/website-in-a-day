@@ -69,13 +69,15 @@ const RequirementsSection = () => {
 
         <div className="overflow-hidden mt-12">
           <motion.div
-            animate={{ x: ["100%", "-100%"] }}
-            transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
-            className="whitespace-nowrap"
+            animate={{ x: [0, -1000] }}
+            transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+            className="whitespace-nowrap flex gap-16"
           >
-            <span className="font-display text-2xl md:text-3xl italic text-primary">
-              🤍🤍🤍 Am construit <AnimatedCounter target={125} duration={2} />+ site-uri într-o zi! 🤍🤍🤍
-            </span>
+            {[...Array(6)].map((_, i) => (
+              <span key={i} className="font-display text-2xl md:text-3xl italic text-primary shrink-0">
+                🤍🤍🤍 Am construit {i === 0 ? <AnimatedCounter target={125} duration={2} /> : "125"}+ site-uri într-o zi! 🤍🤍🤍
+              </span>
+            ))}
           </motion.div>
         </div>
       </div>

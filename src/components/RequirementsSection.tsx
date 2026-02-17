@@ -49,11 +49,11 @@ const RequirementsSection = () => {
 
         <div className="overflow-hidden mt-12">
           <motion.div
-            animate={{ x: [0, -1000] }}
-            transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-            className="whitespace-nowrap flex gap-16"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+            className="whitespace-nowrap flex gap-12"
           >
-            {[...Array(6)].map((_, i) => (
+            {[...Array(10)].map((_, i) => (
               <span key={i} className="font-display text-2xl md:text-3xl italic text-primary shrink-0">
                 🤍🤍🤍 Am construit 125+ site-uri într-o zi!
               </span>

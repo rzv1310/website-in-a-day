@@ -34,13 +34,25 @@ const TeamSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16"
+          className="mb-8"
         >
           <img
             src={echipaImg}
             alt="Echipa Website in One Day"
-            className="w-full max-w-2xl mx-auto rounded-sm shadow-gold"
+            className="w-full md:max-w-md max-w-2xl mx-auto rounded-sm shadow-gold"
           />
+        </motion.div>
+
+        {/* First paragraph - under team photo */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-3xl mx-auto text-center mb-16"
+        >
+          <p className="text-foreground/80 font-light font-body text-base leading-relaxed">
+            Când lucrăm împreună, business-ul tău devine și „copilul" nostru și îl facem să arate fix cum trebuie în cel mai scurt timp posibil.
+          </p>
         </motion.div>
 
         {/* Individual photos */}
@@ -65,16 +77,13 @@ const TeamSection = () => {
           ))}
         </div>
 
-        {/* Text */}
+        {/* Remaining text */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="max-w-3xl mx-auto text-center space-y-4"
         >
-          <p className="text-foreground/80 font-light font-body text-base leading-relaxed">
-            Când lucrăm împreună, business-ul tău devine și „copilul" nostru și îl facem să arate fix cum trebuie în cel mai scurt timp posibil.
-          </p>
           <p className="text-foreground/80 font-light font-body text-base leading-relaxed">
             Cu background-ul nostru în Marketing, Administrarea Afacerilor și IT, știm ce anume face ca un design să vândă pe bune și cum îl adaptăm ca să vorbească perfect pe limba publicului tău țintă.
           </p>

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
-import echipaImg from "@/assets/echipa_seo_doctor.png";
+
 
 const HeroSection = () => {
   return (
@@ -93,20 +93,6 @@ const HeroSection = () => {
 
     </section>
 
-    {/* Team photo below hero */}
-    <div className="bg-section-white py-12 md:py-16 px-6">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-      >
-        <img
-          src={echipaImg}
-          alt="Echipa Website in One Day"
-          className="w-full md:max-w-md max-w-2xl mx-auto rounded-sm shadow-gold"
-        />
-      </motion.div>
-    </div>
   </>
   );
 };

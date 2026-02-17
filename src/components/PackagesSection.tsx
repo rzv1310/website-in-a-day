@@ -49,7 +49,7 @@ const PackagesSection = () => {
         <div className="text-center">
           <a
             href="#"
-             className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-lg hover:opacity-90 transition-opacity"
+             className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-[19px] hover:opacity-90 transition-opacity"
           >
             Vreau Să Mă Programez !
           </a>
@@ -93,7 +93,7 @@ const PackagesSection = () => {
         <div className="text-center">
           <a
             href="#"
-            className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-lg hover:opacity-90 transition-opacity"
+            className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-[19px] hover:opacity-90 transition-opacity"
           >
             Vreau Experiența Platinum !
           </a>

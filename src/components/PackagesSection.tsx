@@ -88,6 +88,16 @@ const PackagesSection = () => {
           ]}
           recap="Ești gata pentru noua ta imagine digitală?"
         />
+
+        {/* CTA after Platinum */}
+        <div className="text-center">
+          <a
+            href="#"
+            className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-base hover:opacity-90 transition-opacity"
+          >
+            Vreau Programare !
+          </a>
+        </div>
       </div>
     </section>
   );

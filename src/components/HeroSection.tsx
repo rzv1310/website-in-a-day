@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
+import echipaImg from "@/assets/echipa_seo_doctor.png";
 
 const HeroSection = () => {
   return (
@@ -87,6 +88,20 @@ const HeroSection = () => {
         className="absolute bottom-10 left-1/2 -translate-x-1/2"
       >
         <div className="w-px h-16 bg-gradient-to-b from-primary/50 to-transparent" />
+      </motion.div>
+
+      {/* Team photo moved here from TeamSection */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.8, duration: 0.8 }}
+        className="absolute bottom-0 left-0 right-0 translate-y-1/2 z-20 px-6"
+      >
+        <img
+          src={echipaImg}
+          alt="Echipa Website in One Day"
+          className="w-full md:max-w-md max-w-2xl mx-auto rounded-sm shadow-gold"
+        />
       </motion.div>
     </section>
   );

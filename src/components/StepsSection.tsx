@@ -51,6 +51,19 @@ const StepsSection = () => {
           {/* Vertical line */}
           <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary/50 via-primary/20 to-transparent" />
 
+          {/* Glowing dot traveling down the line */}
+          <motion.div
+            className="absolute left-6 md:left-1/2 -translate-x-1/2 w-3 h-3 rounded-full z-10"
+            style={{
+              background: "white",
+              boxShadow: "0 0 8px 4px rgba(255,255,255,0.8), 0 0 20px 8px rgba(255,255,255,0.4)",
+            }}
+            initial={{ top: "0%" }}
+            whileInView={{ top: ["0%", "100%"] }}
+            viewport={{ once: true }}
+            transition={{ duration: 4, ease: "easeInOut", repeat: Infinity }}
+          />
+
           <div className="space-y-16">
             {phases.map((phase, i) => (
               <motion.div

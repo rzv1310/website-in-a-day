@@ -51,17 +51,15 @@ const RequirementsSection = () => {
 
         <div className="overflow-hidden mt-12">
           <div
-            className="whitespace-nowrap flex gap-12 animate-marquee"
-            style={{ animationDuration: isMobile ? "5s" : "10s" }}
+            className="whitespace-nowrap inline-flex gap-12"
+            style={{
+              animation: `marquee ${isMobile ? "8s" : "10s"} linear infinite`,
+            }}
           >
-            {[...Array(2)].map((_, set) => (
-              <div key={set} className="flex gap-12 shrink-0">
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} className="font-display text-2xl md:text-3xl italic text-primary shrink-0">
-                    🤍🤍🤍 Am construit de 125 de ori 125 de site-uri într-o zi!
-                  </span>
-                ))}
-              </div>
+            {[...Array(10)].map((_, i) => (
+              <span key={i} className="font-display text-2xl md:text-3xl italic text-primary shrink-0">
+                🤍🤍🤍 Am construit de 125 de ori 125 de site-uri într-o zi!
+              </span>
             ))}
           </div>
         </div>

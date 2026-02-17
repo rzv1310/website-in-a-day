@@ -6,54 +6,54 @@
 
 @layer base {
   :root {
-    --background: 220 20% 6%;
-    --foreground: 40 20% 90%;
+    --background: 35 30% 96%;
+    --foreground: 25 30% 15%;
 
-    --card: 220 18% 10%;
-    --card-foreground: 40 20% 90%;
+    --card: 35 25% 92%;
+    --card-foreground: 25 30% 15%;
 
-    --popover: 220 18% 10%;
-    --popover-foreground: 40 20% 90%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 30% 15%;
 
-    --primary: 40 70% 55%;
-    --primary-foreground: 220 20% 6%;
+    --primary: 25 45% 35%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 15% 14%;
-    --secondary-foreground: 40 20% 90%;
+    --secondary: 35 20% 88%;
+    --secondary-foreground: 25 30% 15%;
 
-    --muted: 220 15% 14%;
-    --muted-foreground: 220 10% 55%;
+    --muted: 35 15% 90%;
+    --muted-foreground: 25 15% 45%;
 
-    --accent: 40 70% 55%;
-    --accent-foreground: 220 20% 6%;
+    --accent: 25 45% 35%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 18%;
-    --input: 220 15% 18%;
-    --ring: 40 70% 55%;
+    --border: 35 20% 82%;
+    --input: 35 20% 82%;
+    --ring: 25 45% 35%;
 
     --radius: 0.5rem;
 
-    --gold: 40 70% 55%;
-    --gold-light: 40 60% 70%;
-    --gold-dark: 40 80% 40%;
-    --cream: 40 20% 90%;
-    --dark-surface: 220 18% 10%;
-    --darker-surface: 220 20% 8%;
+    --gold: 25 45% 35%;
+    --gold-light: 30 35% 50%;
+    --gold-dark: 20 55% 25%;
+    --cream: 35 30% 96%;
+    --beige: 35 25% 92%;
+    --white-section: 0 0% 100%;
 
     --font-display: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
 
-    --sidebar-background: 220 20% 6%;
-    --sidebar-foreground: 40 20% 90%;
-    --sidebar-primary: 40 70% 55%;
-    --sidebar-primary-foreground: 220 20% 6%;
-    --sidebar-accent: 220 15% 14%;
-    --sidebar-accent-foreground: 40 20% 90%;
-    --sidebar-border: 220 15% 18%;
-    --sidebar-ring: 40 70% 55%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 25 30% 15%;
+    --sidebar-primary: 25 45% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 35 20% 88%;
+    --sidebar-accent-foreground: 25 30% 15%;
+    --sidebar-border: 35 20% 82%;
+    --sidebar-ring: 25 45% 35%;
   }
 }
 
@@ -74,30 +74,38 @@
 
 @layer utilities {
   .text-gradient-gold {
-    background: linear-gradient(135deg, hsl(40 60% 70%), hsl(40 70% 55%), hsl(40 80% 40%));
+    background: linear-gradient(135deg, hsl(30 35% 50%), hsl(25 45% 35%), hsl(20 55% 25%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .bg-gradient-gold {
-    background: linear-gradient(135deg, hsl(40 80% 40%), hsl(40 70% 55%), hsl(40 60% 70%));
+    background: linear-gradient(135deg, hsl(20 55% 25%), hsl(25 45% 35%), hsl(30 35% 50%));
   }
 
   .bg-gradient-dark {
-    background: linear-gradient(180deg, hsl(220 20% 6%), hsl(220 18% 10%));
+    background: linear-gradient(180deg, hsl(35 30% 96%), hsl(35 25% 92%));
   }
 
   .border-gold {
-    border-color: hsl(40 70% 55% / 0.3);
+    border-color: hsl(25 45% 35% / 0.2);
   }
 
   .shadow-gold {
-    box-shadow: 0 0 40px hsl(40 70% 55% / 0.15), 0 0 80px hsl(40 70% 55% / 0.05);
+    box-shadow: 0 0 40px hsl(25 45% 35% / 0.1), 0 0 80px hsl(25 45% 35% / 0.05);
   }
 
   .divider-gold {
     height: 1px;
-    background: linear-gradient(90deg, transparent, hsl(40 70% 55% / 0.4), transparent);
+    background: linear-gradient(90deg, transparent, hsl(25 45% 35% / 0.3), transparent);
+  }
+
+  .bg-section-beige {
+    background-color: hsl(var(--card));
+  }
+
+  .bg-section-white {
+    background-color: hsl(0 0% 100%);
   }
 }

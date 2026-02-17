@@ -42,15 +42,15 @@ const PackageCard = ({
     >
       {/* Header */}
       <div className="text-center mb-10">
-        <p className="text-sm tracking-[0.3em] uppercase text-primary mb-2 font-body">
+        <p className="text-base tracking-[0.3em] uppercase text-primary mb-2 font-body">
           {tier}
         </p>
         <h3 className="font-display text-3xl md:text-4xl text-foreground mb-2">{title}</h3>
         {subtitle && (
-          <p className="text-muted-foreground text-sm italic">{subtitle}</p>
+          <p className="text-muted-foreground text-base italic">{subtitle}</p>
         )}
         <div className="divider-gold w-16 mx-auto my-6" />
-        <p className="text-foreground/80 font-light leading-relaxed max-w-xl mx-auto">
+        <p className="text-foreground/80 font-light leading-relaxed max-w-xl mx-auto text-base">
           {description}
         </p>
       </div>
@@ -75,14 +75,14 @@ const PackageCard = ({
       {/* Legal Pages */}
       {legalPages && legalPages.length > 0 && (
         <div className="mb-8">
-          <p className="text-sm tracking-[0.2em] uppercase text-primary mb-4 font-body">
+          <p className="text-base tracking-[0.2em] uppercase text-primary mb-4 font-body">
             Pagini Legale
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             {legalPages.map((page, i) => (
               <div key={i} className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-primary shrink-0" />
-                <span className="text-foreground/80 text-sm font-light">{page}</span>
+                <span className="text-foreground/80 text-base font-light">{page}</span>
               </div>
             ))}
           </div>
@@ -91,14 +91,14 @@ const PackageCard = ({
 
       {/* Included */}
       <div className="mb-10">
-        <p className="text-sm tracking-[0.2em] uppercase text-primary mb-4 font-body">
+        <p className="text-base tracking-[0.2em] uppercase text-primary mb-4 font-body">
           Inclus
         </p>
         <div className="space-y-2">
           {included.map((item, i) => (
             <div key={i} className="flex items-start gap-2">
               <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-              <span className="text-foreground/80 text-sm font-light">{item}</span>
+              <span className="text-foreground/80 text-base font-light">{item}</span>
             </div>
           ))}
         </div>
@@ -110,7 +110,7 @@ const PackageCard = ({
           {recap}
         </p>
         <div className="mb-2">
-          <span className="text-sm text-muted-foreground uppercase tracking-wider font-body">
+          <span className="text-base text-muted-foreground uppercase tracking-wider font-body">
             Investiție
           </span>
         </div>
@@ -118,7 +118,7 @@ const PackageCard = ({
           {price}
         </p>
         {optional && (
-          <p className="text-muted-foreground text-xs font-light max-w-sm mx-auto">
+          <p className="text-muted-foreground text-base font-light max-w-sm mx-auto">
             {optional}
           </p>
         )}

@@ -2,7 +2,7 @@ import PackageCard from "./PackageCard";
 
 const PackagesSection = () => {
   return (
-    <section id="pachete" className="py-24 md:py-32 px-6 bg-card">
+    <section id="pachete" className="py-24 md:py-32 px-6 bg-section-white">
       <div className="max-w-5xl mx-auto space-y-16">
         {/* Gold */}
         <PackageCard

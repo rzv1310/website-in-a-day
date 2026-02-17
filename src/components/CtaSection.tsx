@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const CtaSection = () => {
   return (
-    <section className="py-32 md:py-40 px-6 text-center">
+    <section className="py-32 md:py-40 px-6 text-center bg-section-beige">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -15,12 +15,12 @@ const CtaSection = () => {
           <span className="text-gradient-gold">noua ta imagine digitală</span>?
         </h2>
         <div className="divider-gold w-16 mx-auto my-8" />
-        <p className="text-muted-foreground font-light mb-10">
+        <p className="text-muted-foreground font-light mb-10 text-base">
           Hai să vorbim. Primul pas e un simplu apel.
         </p>
         <a
           href="#"
-          className="inline-block bg-gradient-gold text-primary-foreground font-semibold px-12 py-4 rounded-sm tracking-wider uppercase text-sm hover:opacity-90 transition-opacity"
+          className="inline-block bg-gradient-gold text-primary-foreground font-semibold px-12 py-4 rounded-sm tracking-wider uppercase text-base hover:opacity-90 transition-opacity"
         >
           Programează un apel
         </a>

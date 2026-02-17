@@ -12,7 +12,7 @@ const CtaSection = () => {
       >
         <h2 className="font-display text-3xl md:text-5xl text-foreground mb-6 leading-tight">
           Ești gata pentru{" "}
-          <span className="text-primary">noua ta imagine digitală</span>?
+          <span className="text-primary italic">noua ta imagine digitală</span>?
         </h2>
         <div className="divider-gold w-16 mx-auto my-8" />
         <p className="text-muted-foreground font-light mb-10 text-[19px]">

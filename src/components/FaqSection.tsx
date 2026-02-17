@@ -52,7 +52,7 @@ const FaqSection = () => {
             Cele mai frecvente întrebări
           </h2>
           <div className="divider-gold w-16 mx-auto mb-6" />
-          <p className="text-foreground/80 font-light text-lg leading-relaxed">
+          <p className="text-foreground/80 font-light text-[19px] leading-relaxed">
             Mai jos găsești cele mai întâlnite întrebări. Dacă nu vezi răspunsul pe care îl cauți,{" "}
             <a href="#" className="underline text-primary font-medium">
               scrie-ne în whatsapp aici
@@ -75,10 +75,10 @@ const FaqSection = () => {
                 transform: `rotate(${rotations[i % rotations.length]})`,
               }}
             >
-              <h3 className="font-display text-lg md:text-lg font-semibold text-foreground mb-3">
+              <h3 className="font-display text-[19px] md:text-[19px] font-semibold text-foreground mb-3">
                 {faq.question}
               </h3>
-              <p className="text-foreground/80 font-body text-lg leading-relaxed whitespace-pre-line">
+              <p className="text-foreground/80 font-body text-[19px] leading-relaxed whitespace-pre-line">
                 {faq.answer}
               </p>
             </motion.div>

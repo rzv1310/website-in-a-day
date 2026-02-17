@@ -44,15 +44,15 @@ const PackageCard = ({
     >
       {/* Header */}
       <div className="text-center mb-10">
-        <p className="text-sm md:text-lg tracking-[0.15em] md:tracking-[0.3em] uppercase text-primary mb-2 font-body whitespace-nowrap">
+        <p className="text-sm md:text-[19px] tracking-[0.15em] md:tracking-[0.3em] uppercase text-primary mb-2 font-body whitespace-nowrap">
           {tier}
         </p>
         <h3 className="font-display text-3xl md:text-4xl text-foreground mb-2">{title}</h3>
         {subtitle && (
-          <p className="text-muted-foreground text-lg italic">{subtitle}</p>
+          <p className="text-muted-foreground text-[19px] italic">{subtitle}</p>
         )}
         <div className="divider-gold w-16 mx-auto my-6" />
-        <p className="text-foreground/80 font-light leading-relaxed max-w-xl mx-auto text-lg">
+        <p className="text-foreground/80 font-light leading-relaxed max-w-xl mx-auto text-[19px]">
           {description}
         </p>
       </div>
@@ -60,14 +60,14 @@ const PackageCard = ({
       {/* Pages */}
       {pages.length > 0 && (
         <div className="mb-8">
-           <p className="text-lg tracking-[0.2em] uppercase text-primary mb-4 font-body">
+            <p className="text-[19px] tracking-[0.2em] uppercase text-primary mb-4 font-body">
             Pagini
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             {pages.map((page, i) => (
               <div key={i} className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-primary shrink-0" />
-                 <span className="text-foreground/80 text-lg font-light">{page}</span>
+                  <span className="text-foreground/80 text-[19px] font-light">{page}</span>
               </div>
             ))}
           </div>
@@ -77,14 +77,14 @@ const PackageCard = ({
       {/* Legal Pages */}
       {legalPages && legalPages.length > 0 && (
         <div className="mb-8">
-           <p className="text-lg tracking-[0.2em] uppercase text-primary mb-4 font-body">
+            <p className="text-[19px] tracking-[0.2em] uppercase text-primary mb-4 font-body">
             Pagini Legale
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             {legalPages.map((page, i) => (
               <div key={i} className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-primary shrink-0" />
-                <span className="text-foreground/80 text-lg font-light">{page}</span>
+                <span className="text-foreground/80 text-[19px] font-light">{page}</span>
               </div>
             ))}
           </div>
@@ -93,14 +93,14 @@ const PackageCard = ({
 
       {/* Included */}
       <div className="mb-10">
-        <p className="text-lg tracking-[0.2em] uppercase text-primary mb-4 font-body">
+        <p className="text-[19px] tracking-[0.2em] uppercase text-primary mb-4 font-body">
           Inclus
         </p>
         <div className="space-y-2">
           {included.map((item, i) => (
             <div key={i} className="flex items-start gap-2">
               <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-              <span className="text-foreground/80 text-lg font-light">{item}</span>
+              <span className="text-foreground/80 text-[19px] font-light">{item}</span>
             </div>
           ))}
         </div>
@@ -110,16 +110,16 @@ const PackageCard = ({
         {preRecap && preRecap.length > 0 && (
           <div className="mb-8 space-y-2">
             {preRecap.map((line, i) => (
-              <p key={i} className="text-foreground/80 font-light italic font-display leading-relaxed text-lg">
+              <p key={i} className="text-foreground/80 font-light italic font-display leading-relaxed text-[19px]">
                 {line}
               </p>
             ))}
           </div>
         )}
-        <p className="text-foreground/80 font-light italic font-display leading-relaxed mb-8 max-w-lg mx-auto text-lg">
+        <p className="text-foreground/80 font-light italic font-display leading-relaxed mb-8 max-w-lg mx-auto text-[19px]">
         </p>
         <div className="mb-2">
-          <span className="text-lg text-muted-foreground uppercase tracking-wider font-body">
+          <span className="text-[19px] text-muted-foreground uppercase tracking-wider font-body">
             Investiție
           </span>
         </div>
@@ -127,7 +127,7 @@ const PackageCard = ({
           {price}
         </p>
         {optional && (
-          <p className="text-muted-foreground text-lg font-light max-w-sm mx-auto">
+          <p className="text-muted-foreground text-[19px] font-light max-w-sm mx-auto">
             {optional}
           </p>
         )}

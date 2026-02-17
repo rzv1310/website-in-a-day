@@ -67,14 +67,17 @@ const RequirementsSection = () => {
           ))}
         </div>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mt-12 font-display text-2xl md:text-3xl text-foreground"
-        >
-          Am construit <AnimatedCounter target={125} duration={2} />+ site-uri într-o zi!
-        </motion.p>
+        <div className="overflow-hidden mt-12">
+          <motion.div
+            animate={{ x: ["100%", "-100%"] }}
+            transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
+            className="whitespace-nowrap"
+          >
+            <span className="font-display text-2xl md:text-3xl italic text-primary">
+              🤍🤍🤍 Am construit <AnimatedCounter target={125} duration={2} />+ site-uri într-o zi! 🤍🤍🤍
+            </span>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

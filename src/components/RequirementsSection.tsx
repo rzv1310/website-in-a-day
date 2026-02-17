@@ -50,18 +50,20 @@ const RequirementsSection = () => {
         </div>
 
         <div className="overflow-hidden mt-12">
-          <motion.div
-            key={isMobile ? "mobile" : "desktop"}
-            animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: isMobile ? 2 : 15, repeat: Infinity, ease: "linear" }}
-            className="whitespace-nowrap flex gap-12"
+          <div
+            className="whitespace-nowrap flex gap-12 animate-marquee"
+            style={{ animationDuration: isMobile ? "8s" : "20s" }}
           >
-            {[...Array(10)].map((_, i) => (
-              <span key={i} className="font-display text-2xl md:text-3xl italic text-primary shrink-0">
-                🤍🤍🤍 Am construit 125+ site-uri într-o zi!
-              </span>
+            {[...Array(2)].map((_, set) => (
+              <div key={set} className="flex gap-12 shrink-0">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="font-display text-2xl md:text-3xl italic text-primary shrink-0">
+                    🤍🤍🤍 Am construit 125+ site-uri într-o zi!
+                  </span>
+                ))}
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

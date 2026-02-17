@@ -62,7 +62,7 @@ const PackagesSection = () => {
           title="Ce Primești"
           description=""
           price="1.297 €"
-          optional="Opțional, fără bătăi de cap după 12 luni: Nume domeniu + Găzduire + suport tehnic + security updates = 100 lei/lună."
+          
           pages={[]}
           included={[
             "Totul din Pachetul Gold +",

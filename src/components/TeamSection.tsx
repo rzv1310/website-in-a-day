@@ -69,10 +69,8 @@ const TeamSection = () => {
               <img
                 src={member.img}
                 alt={member.name}
-                className="w-full max-w-xs mx-auto rounded-sm shadow-gold mb-4"
+                className="w-full max-w-xs mx-auto rounded-sm shadow-gold"
               />
-              <h3 className="font-display text-xl text-foreground">{member.name}</h3>
-              <p className="text-muted-foreground font-body text-base">{member.role}</p>
             </motion.div>
           ))}
         </div>

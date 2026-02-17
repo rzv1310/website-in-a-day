@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useIsMobile } from "@/hooks/use-mobile";
 import { Camera, MapPin, Phone, Users, List, DollarSign, Building } from "lucide-react";
 
 const items = [
@@ -13,6 +14,7 @@ const items = [
 
 
 const RequirementsSection = () => {
+  const isMobile = useIsMobile();
   return (
     <section id="pregatire" className="py-24 md:py-32 px-6 bg-section-white">
       <div className="max-w-3xl mx-auto">
@@ -50,7 +52,7 @@ const RequirementsSection = () => {
         <div className="overflow-hidden mt-12">
           <motion.div
             animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: isMobile ? 5 : 15, repeat: Infinity, ease: "linear" }}
             className="whitespace-nowrap flex gap-12"
           >
             {[...Array(10)].map((_, i) => (

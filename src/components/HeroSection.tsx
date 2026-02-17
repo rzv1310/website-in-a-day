@@ -20,8 +20,10 @@ const HeroSection = () => {
             Premium Web Design
           </p>
           <h1 className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-foreground px-2">
-            Ești pregătit pentru aventura
-            <br className="hidden md:block" />
+            Ești pregătit pentru
+            <br />
+            aventura
+            <br />
             <span className="text-gradient-gold italic">'website in one day' ?</span>
           </h1>
           <div className="divider-gold w-24 mx-auto my-8" />

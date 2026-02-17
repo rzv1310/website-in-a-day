@@ -60,7 +60,7 @@ const PackageCard = ({
       {/* Pages */}
       {pages.length > 0 && (
         <div className="mb-8">
-          <p className="text-sm tracking-[0.2em] uppercase text-primary mb-4 font-body">
+          <p className="text-base tracking-[0.2em] uppercase text-primary mb-4 font-body">
             Pagini
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">

@@ -125,9 +125,15 @@ const TeamSection = () => {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto text-center"
         >
-          <p className="text-foreground/80 font-light font-body text-xl md:text-2xl leading-relaxed italic font-display">
+          <p className="text-foreground/80 font-light font-body text-xl md:text-2xl leading-relaxed italic font-display mb-8">
             Noi nu facem doar „să arate frumos". Facem să-ți aducă bani.
           </p>
+          <a
+            href="#pachete"
+            className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-base hover:opacity-90 transition-opacity"
+          >
+            Vreau Site !
+          </a>
         </motion.div>
       </div>
     </section>

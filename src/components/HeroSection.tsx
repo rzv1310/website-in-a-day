@@ -24,7 +24,7 @@ const HeroSection = () => {
             <br />
             aventura</span>
             <br />
-            <span className="text-gradient-gold italic font-bold">'website in one day' ?</span>
+            <span className="text-primary italic font-bold">'website in one day' ?</span>
           </h1>
           <div className="divider-gold w-24 mx-auto my-8" />
         </motion.div>

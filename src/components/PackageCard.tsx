@@ -100,7 +100,7 @@ const PackageCard = ({
           {included.map((item, i) => (
             <div key={i} className="flex items-start gap-2">
               <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-              <span className="text-foreground/80 text-[19px] font-light">{item}</span>
+              <span className={`text-foreground/80 text-[19px] ${item.startsWith("Totul din") ? "font-bold" : "font-light"}`}>{item}</span>
             </div>
           ))}
         </div>

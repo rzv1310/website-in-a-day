@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     question: "Scrieți voi textele pentru site?",
-    answer: `Da, serviciile de copywriting sunt incluse. Dar evident că avem nevoie de ajutorul tău. Stabilim împreună structura și conținutul și va trebui să-ți dai acordul în prealabil.`,
+    answer: `Da, serviciile de copywriting sunt incluse.\nDar evident că avem nevoie de ajutorul tău.\nStabilim împreună structura și conținutul și va trebui să-ți dai acordul în prealabil.`,
   },
 ];
 

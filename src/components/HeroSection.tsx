@@ -37,7 +37,7 @@ const HeroSection = () => {
         >
           <a
             href="#pregatire"
-            className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground font-light px-10 py-4 rounded-sm tracking-wider uppercase text-[19px] hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground font-light px-10 py-4 rounded-sm tracking-wider uppercase text-base hover:opacity-90 transition-opacity"
           >
             Știm că vrei să afli mai mult
             <span className="inline-block animate-bounce">↓</span>

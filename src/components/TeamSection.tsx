@@ -55,8 +55,8 @@ const TeamSection = () => {
           </p>
         </motion.div>
 
-        {/* Individual photos */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        {/* Individual photos - desktop grid */}
+        <div className="hidden md:grid md:grid-cols-3 gap-8 mb-16">
           {team.map((member, i) => (
             <motion.div
               key={member.name}
@@ -75,17 +75,57 @@ const TeamSection = () => {
           ))}
         </div>
 
-        {/* Remaining text */}
+        {/* Individual photos - mobile stacked with text after 3rd */}
+        <div className="md:hidden space-y-8 mb-16">
+          {team.map((member, i) => (
+            <div key={member.name}>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.15, duration: 0.6 }}
+                className="text-center"
+              >
+                <img
+                  src={member.img}
+                  alt={member.name}
+                  className="w-full max-w-xs mx-auto rounded-sm shadow-gold"
+                />
+              </motion.div>
+              {i === 2 && (
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="text-foreground/80 font-light font-body text-base leading-relaxed text-center max-w-3xl mx-auto mt-8"
+                >
+                  Cu background-ul nostru în Marketing, Administrarea Afacerilor și IT, știm ce anume face ca un design să vândă pe bune și cum îl adaptăm ca să vorbească perfect pe limba publicului tău țintă.
+                </motion.p>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* "Cu background-ul..." - desktop only */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-3xl mx-auto text-center space-y-4"
+          className="hidden md:block max-w-3xl mx-auto text-center mb-8"
         >
           <p className="text-foreground/80 font-light font-body text-base leading-relaxed">
             Cu background-ul nostru în Marketing, Administrarea Afacerilor și IT, știm ce anume face ca un design să vândă pe bune și cum îl adaptăm ca să vorbească perfect pe limba publicului tău țintă.
           </p>
-          <p className="text-foreground/80 font-light font-body text-base leading-relaxed italic">
+        </motion.div>
+
+        {/* Final statement */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-3xl mx-auto text-center"
+        >
+          <p className="text-foreground/80 font-light font-body text-xl md:text-2xl leading-relaxed italic font-display">
             Noi nu facem doar „să arate frumos". Facem să-ți aducă bani.
           </p>
         </motion.div>

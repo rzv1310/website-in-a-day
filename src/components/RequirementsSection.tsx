@@ -58,7 +58,7 @@ const RequirementsSection = () => {
               <div key={set} className="flex gap-12 shrink-0">
                 {[...Array(5)].map((_, i) => (
                   <span key={i} className="font-display text-2xl md:text-3xl italic text-primary shrink-0">
-                    🤍🤍🤍 Am construit 125+ site-uri într-o zi!
+                    🤍🤍🤍 Am construit de 125 de ori 125 de site-uri într-o zi!
                   </span>
                 ))}
               </div>

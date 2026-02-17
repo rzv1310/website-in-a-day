@@ -19,12 +19,12 @@ const HeroSection = () => {
           <p className="text-base font-body tracking-[0.3em] uppercase text-primary mb-8">
             Premium Web Design
           </p>
-          <h1 className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-foreground px-2">
-            Ești pregătit pentru
+          <h1 className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-tight mb-6 text-foreground px-2">
+            <span className="font-normal">Ești pregătit pentru
             <br />
-            aventura
+            aventura</span>
             <br />
-            <span className="text-gradient-gold italic">'website in one day' ?</span>
+            <span className="text-gradient-gold italic font-bold">'website in one day' ?</span>
           </h1>
           <div className="divider-gold w-24 mx-auto my-8" />
         </motion.div>

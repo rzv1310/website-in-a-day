@@ -67,7 +67,7 @@ const PackageCard = ({
             {pages.map((page, i) => (
               <div key={i} className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-primary shrink-0" />
-                <span className="text-foreground/80 text-sm font-light">{page}</span>
+                <span className="text-foreground/80 text-base font-light">{page}</span>
               </div>
             ))}
           </div>

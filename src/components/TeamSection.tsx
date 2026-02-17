@@ -35,7 +35,7 @@ const TeamSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-3xl mx-auto text-center mb-16"
+          className="hidden md:block max-w-3xl mx-auto text-center mb-16"
         >
            <p className="text-primary font-light font-body text-[19px] leading-relaxed">
             Când lucrăm împreună, business-ul tău devine și „copilul" nostru și îl facem să arate fix cum trebuie în cel mai scurt timp posibil.
@@ -79,6 +79,16 @@ const TeamSection = () => {
                   className="w-full max-w-xs mx-auto rounded-sm shadow-gold"
                 />
               </motion.div>
+              {i === 0 && (
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="text-primary font-light font-body text-[19px] leading-relaxed text-center max-w-3xl mx-auto mt-8"
+                >
+                  Când lucrăm împreună, business-ul tău devine și „copilul" nostru și îl facem să arate fix cum trebuie în cel mai scurt timp posibil.
+                </motion.p>
+              )}
               {i === 1 && (
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}

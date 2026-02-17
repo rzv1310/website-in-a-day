@@ -16,7 +16,7 @@ const items = [
 const RequirementsSection = () => {
   const isMobile = useIsMobile();
   return (
-    <section id="pregatire" className="pt-48 md:pt-56 pb-24 md:pb-32 px-6 bg-section-white">
+    <section id="pregatire" className="py-24 md:py-32 px-6 bg-section-white">
       <div className="max-w-3xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

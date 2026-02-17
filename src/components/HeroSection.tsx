@@ -4,6 +4,7 @@ import echipaImg from "@/assets/echipa_seo_doctor.png";
 
 const HeroSection = () => {
   return (
+    <>
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-15"
@@ -90,12 +91,14 @@ const HeroSection = () => {
         <div className="w-px h-16 bg-gradient-to-b from-primary/50 to-transparent" />
       </motion.div>
 
-      {/* Team photo moved here from TeamSection */}
+    </section>
+
+    {/* Team photo below hero */}
+    <div className="bg-section-white py-12 md:py-16 px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.8, duration: 0.8 }}
-        className="absolute bottom-0 left-0 right-0 translate-y-1/2 z-20 px-6"
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
       >
         <img
           src={echipaImg}
@@ -103,7 +106,8 @@ const HeroSection = () => {
           className="w-full md:max-w-md max-w-2xl mx-auto rounded-sm shadow-gold"
         />
       </motion.div>
-    </section>
+    </div>
+  </>
   );
 };
 

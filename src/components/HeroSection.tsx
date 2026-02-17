@@ -24,7 +24,18 @@ const HeroSection = () => {
             <br />
             aventura</span>
             <br />
-            <span className="text-primary italic">'website in one day' ?</span>
+            <span className="text-primary italic">
+              {"'website in one day' ?".split("").map((char, i) => (
+                <motion.span
+                  key={i}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1 + i * (2 / 22), duration: 0.05 }}
+                >
+                  {char}
+                </motion.span>
+              ))}
+            </span>
           </h1>
           <div className="divider-gold w-24 mx-auto my-8" />
         </motion.div>

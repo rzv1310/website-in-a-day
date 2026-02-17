@@ -52,7 +52,7 @@ const RequirementsSection = () => {
         <div className="overflow-hidden mt-12">
           <div
             className="whitespace-nowrap flex gap-12 animate-marquee"
-            style={{ animationDuration: isMobile ? "8s" : "20s" }}
+            style={{ animationDuration: isMobile ? "5s" : "14s" }}
           >
             {[...Array(2)].map((_, set) => (
               <div key={set} className="flex gap-12 shrink-0">

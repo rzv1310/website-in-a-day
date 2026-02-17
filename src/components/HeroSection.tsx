@@ -33,10 +33,11 @@ const HeroSection = () => {
           className="mt-8"
         >
           <a
-            href="#pachete"
-            className="inline-block bg-gradient-gold text-primary-foreground font-semibold px-10 py-4 rounded-sm tracking-wider uppercase text-base hover:opacity-90 transition-opacity"
+            href="#pregatire"
+            className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground font-semibold px-10 py-4 rounded-sm tracking-wider uppercase text-base hover:opacity-90 transition-opacity"
           >
-            Descoperă Oferta
+            Știm că vrei să afli mai mult
+            <span className="inline-block animate-bounce">↓</span>
           </a>
         </motion.div>
 

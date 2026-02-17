@@ -46,7 +46,7 @@ const RequirementsSection = () => {
             Pregătire
           </p>
           <h2 className="font-display text-3xl md:text-4xl text-foreground">
-            Am construit <AnimatedCounter target={125} duration={2} />+ site-uri într-o zi!
+            Ce avem nevoie de la tine
           </h2>
           <div className="divider-gold w-16 mx-auto mt-6" />
         </motion.div>
@@ -66,6 +66,15 @@ const RequirementsSection = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mt-12 font-display text-2xl md:text-3xl text-foreground"
+        >
+          Am construit <AnimatedCounter target={125} duration={2} />+ site-uri într-o zi!
+        </motion.p>
       </div>
     </section>
   );

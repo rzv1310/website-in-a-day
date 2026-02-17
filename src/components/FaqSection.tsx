@@ -50,7 +50,7 @@ const FaqSection = () => {
           </p>
         </motion.div>
 
-        <div className="space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {faqs.map((faq, i) => (
             <motion.div
               key={i}
@@ -58,7 +58,7 @@ const FaqSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="bg-white rounded-sm shadow-sm p-6"
+              className="bg-white rounded-sm shadow-sm p-6 aspect-square flex flex-col justify-start"
             >
               <h3 className="font-display text-base md:text-lg font-semibold text-foreground mb-3">
                 {faq.question}

@@ -27,6 +27,17 @@ const faqs = [
   },
 ];
 
+const clipPaths = [
+  "polygon(0% 2%, 98% 0%, 100% 97%, 1% 100%)",
+  "polygon(1% 0%, 100% 1%, 99% 100%, 0% 98%)",
+  "polygon(0% 1%, 99% 0%, 100% 99%, 2% 100%)",
+  "polygon(2% 0%, 100% 2%, 98% 100%, 0% 99%)",
+  "polygon(0% 0%, 97% 1%, 100% 100%, 1% 98%)",
+  "polygon(1% 1%, 100% 0%, 99% 98%, 0% 100%)",
+];
+
+const rotations = ["-0.8deg", "0.6deg", "0.5deg", "-0.7deg", "0.4deg", "-0.5deg"];
+
 const FaqSection = () => {
   return (
     <section id="faq" className="py-24 md:py-32 px-6" style={{ backgroundColor: "#ffebce" }}>
@@ -50,7 +61,7 @@ const FaqSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {faqs.map((faq, i) => (
             <motion.div
               key={i}
@@ -58,7 +69,11 @@ const FaqSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="bg-white rounded-sm shadow-sm p-6 flex flex-col justify-start h-full"
+              className="bg-white shadow-md p-7 flex flex-col justify-start h-full"
+              style={{
+                clipPath: clipPaths[i % clipPaths.length],
+                transform: `rotate(${rotations[i % rotations.length]})`,
+              }}
             >
               <h3 className="font-display text-base md:text-lg font-semibold text-foreground mb-3">
                 {faq.question}

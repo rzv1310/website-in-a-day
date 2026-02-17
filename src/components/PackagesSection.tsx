@@ -95,7 +95,7 @@ const PackagesSection = () => {
             href="#"
             className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-base hover:opacity-90 transition-opacity"
           >
-            Vreau Să Mă Programez !
+            Vreau Experienta Platinum !
           </a>
         </div>
       </div>

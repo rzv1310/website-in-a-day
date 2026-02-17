@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     question: "Oferiți plata în rate?",
-    answer: `Câteodată! Știm că e o investiție importantă și vrem să fie cât mai ușor să spui „da" și să începem. De aceea oferim opțiuni de plată în 2 rate la pachetul Platinum.`,
+    answer: `Câteodată! Știm că e o investiție importantă și vrem să fie cât mai ușor să spui „da" și să începem. De aceea oferim opțiuni de plată în 2 rate lunare la pachetul Platinum.`,
   },
   {
     question: "Mai aveți și alte pachete de website?",
@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: "Cu cât timp înainte ar trebui să-mi programez ziua lansării?",
-    answer: `În ziua progamării vom avea împreună o conversație telefonică și vom stabili atunci.\n\nRecomandăm, de obicei, să rezervi cu cel aprox. 2 săptămâni înainte, ca să avem timp să strângem textele și materialele necesare. Dacă ai deadline strâns, spune-ne și vedem cum te putem „strecura" în program.`,
+    answer: `În ziua progamării vom avea împreună o conversație telefonică și vom stabili atunci.\n\nRecomandăm, de obicei, să rezervi cu aprox. 2 săptămâni înainte, ca să avem timp să strângem textele și materialele necesare. Dacă ai deadline strâns, spune-ne și vedem cum te putem „strecura" în program.`,
   },
   {
     question: "Scrieți voi textele pentru site?",
@@ -79,7 +79,7 @@ const FaqSection = () => {
               <h3 className="font-display text-[19px] md:text-[19px] font-semibold text-foreground mb-3">
                 {faq.question}
               </h3>
-              <p className="text-foreground/80 font-body text-[19px] leading-relaxed whitespace-pre-line">
+              <p className="text-primary font-body text-[19px] leading-relaxed whitespace-pre-line">
                 {faq.answer}
               </p>
               {(faq as any).hasWhatsappLink && (

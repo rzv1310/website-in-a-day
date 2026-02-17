@@ -45,6 +45,16 @@ const PackagesSection = () => {
           recap="Ca să recapitulăm, acesta este un site personalizat, făcut de la zero pentru tine, construit pentru a-ți transforma businessul și care va fi gata să-ți aducă clienți începând chiar de a doua zi."
         />
 
+        {/* CTA between packages */}
+        <div className="text-center">
+          <a
+            href="#"
+            className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-base hover:opacity-90 transition-opacity"
+          >
+            Vreau Programare !
+          </a>
+        </div>
+
         {/* Platinum */}
         <PackageCard
           highlight

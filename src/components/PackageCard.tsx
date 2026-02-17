@@ -110,7 +110,7 @@ const PackageCard = ({
         {preRecap && preRecap.length > 0 && (
           <div className="mb-8 space-y-2">
             {preRecap.map((line, i) => (
-              <p key={i} className={`font-light italic font-display leading-relaxed text-[19px] ${line.includes("vecin") ? "text-foreground" : "text-primary"} ${line.startsWith("Ce primești aici este") ? "mt-6" : ""}`}>
+              <p key={i} className={`font-light italic font-display leading-relaxed text-[19px] ${line.includes("vecin") ? "text-foreground" : "text-primary"} ${line.startsWith("Ce primești aici este") ? "!mt-8" : ""}`}>
                 {line}
               </p>
             ))}

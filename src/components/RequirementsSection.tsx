@@ -53,7 +53,7 @@ const RequirementsSection = () => {
           <div
             className="whitespace-nowrap inline-flex gap-12"
             style={{
-              animation: `marquee ${isMobile ? "8s" : "10s"} linear infinite`,
+              animation: `marquee ${isMobile ? "20s" : "30s"} linear infinite`,
             }}
           >
             {[...Array(10)].map((_, i) => (

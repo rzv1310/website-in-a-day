@@ -1,6 +1,5 @@
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import { Camera, MapPin, Phone, Users, List, DollarSign, Building } from "lucide-react";
-import { useState, useEffect, useRef } from "react";
 
 const items = [
   { icon: Building, text: "Nume Business (+ poze, dacă există)" },
@@ -12,25 +11,6 @@ const items = [
   { icon: Camera, text: "Detalii business (istoric, etc.)" },
 ];
 
-const AnimatedCounter = ({ target, duration = 2 }: { target: number; duration?: number }) => {
-  const [count, setCount] = useState(0);
-  const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true });
-
-  useEffect(() => {
-    if (!isInView) return;
-    const start = performance.now();
-    const step = (now: number) => {
-      const progress = Math.min((now - start) / (duration * 1000), 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      setCount(Math.floor(eased * target));
-      if (progress < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  }, [isInView, target, duration]);
-
-  return <span ref={ref}>{count}</span>;
-};
 
 const RequirementsSection = () => {
   return (
@@ -75,7 +55,7 @@ const RequirementsSection = () => {
           >
             {[...Array(6)].map((_, i) => (
               <span key={i} className="font-display text-2xl md:text-3xl italic text-primary shrink-0">
-                🤍🤍🤍 Am construit {i === 0 ? <AnimatedCounter target={125} duration={2} /> : "125"}+ site-uri într-o zi! 🤍🤍🤍
+                🤍🤍🤍 Am construit 125+ site-uri într-o zi!
               </span>
             ))}
           </motion.div>

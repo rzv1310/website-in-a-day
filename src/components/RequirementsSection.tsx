@@ -13,7 +13,7 @@ const items = [
 
 const RequirementsSection = () => {
   return (
-    <section className="py-24 md:py-32 px-6 bg-card">
+    <section className="py-24 md:py-32 px-6 bg-section-white">
       <div className="max-w-3xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,7 +21,7 @@ const RequirementsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-sm tracking-[0.3em] uppercase text-primary mb-4 font-body">
+          <p className="text-base tracking-[0.3em] uppercase text-primary mb-4 font-body">
             Pregătire
           </p>
           <h2 className="font-display text-3xl md:text-4xl text-foreground">
@@ -41,7 +41,7 @@ const RequirementsSection = () => {
               className="flex items-center gap-4 p-4 rounded-sm border border-gold bg-secondary/30"
             >
               <item.icon className="w-5 h-5 text-primary shrink-0" />
-              <span className="text-foreground/90 font-light">{item.text}</span>
+              <span className="text-foreground/90 font-light text-base">{item.text}</span>
             </motion.div>
           ))}
         </div>

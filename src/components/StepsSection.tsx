@@ -30,7 +30,7 @@ const phases = [
 
 const StepsSection = () => {
   return (
-    <section className="py-24 md:py-32 px-6">
+    <section className="py-24 md:py-32 px-6 bg-section-beige">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -38,7 +38,7 @@ const StepsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <p className="text-sm tracking-[0.3em] uppercase text-primary mb-4 font-body">
+          <p className="text-base tracking-[0.3em] uppercase text-primary mb-4 font-body">
             Procesul
           </p>
           <h2 className="font-display text-3xl md:text-4xl text-foreground">
@@ -65,13 +65,13 @@ const StepsSection = () => {
                 <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-1 w-4 h-4 rounded-full bg-gradient-gold shadow-gold" />
 
                 <div className={`${i % 2 === 0 ? "md:text-right md:pr-12" : "md:col-start-2 md:pl-12"}`}>
-                  <p className="text-primary text-sm tracking-[0.2em] uppercase font-body mb-1">
+                  <p className="text-primary text-base tracking-[0.2em] uppercase font-body mb-1">
                     {phase.label}
                   </p>
                   <h3 className="font-display text-2xl text-foreground mb-4">{phase.subtitle}</h3>
                   <ul className="space-y-2">
                     {phase.steps.map((step, j) => (
-                      <li key={j} className="text-muted-foreground font-light text-sm leading-relaxed">
+                      <li key={j} className="text-muted-foreground font-light text-base leading-relaxed">
                         {step}
                       </li>
                     ))}

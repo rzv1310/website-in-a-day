@@ -51,8 +51,9 @@ const RequirementsSection = () => {
 
         <div className="overflow-hidden mt-12">
           <motion.div
+            key={isMobile ? "mobile" : "desktop"}
             animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: isMobile ? 3 : 15, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: isMobile ? 2 : 15, repeat: Infinity, ease: "linear" }}
             className="whitespace-nowrap flex gap-12"
           >
             {[...Array(10)].map((_, i) => (

@@ -44,7 +44,7 @@ const PackageCard = ({
     >
       {/* Header */}
       <div className="text-center mb-10">
-        <p className="text-base tracking-[0.3em] uppercase text-primary mb-2 font-body">
+        <p className="text-sm md:text-base tracking-[0.15em] md:tracking-[0.3em] uppercase text-primary mb-2 font-body whitespace-nowrap">
           {tier}
         </p>
         <h3 className="font-display text-3xl md:text-4xl text-foreground mb-2">{title}</h3>

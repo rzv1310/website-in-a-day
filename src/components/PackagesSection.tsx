@@ -73,7 +73,7 @@ const PackagesSection = () => {
             "Creare profil social media (Facebook / Instagram) + covers.",
             "Local Schema Mark-up + Organization + FAQ + AggregateReviews.",
             "Optimizare SEO on-page (meta-titles + meta-descriptions + structură headings).",
-            "Optimizare Core Web Vitals (viteză, accesibilitate).",
+            "Optimizare Core Web Vitals ( +80 viteză, accesibilitate).",
             "LLM.txt (pentru a putea fi descoperit de ChatGPT, Google AI Overviews).",
             "OpenGraph cards (pentru share WhatsApp/Facebook/Twitter).",
             "Banner (pop-up) Cookies (consimțământ user).",

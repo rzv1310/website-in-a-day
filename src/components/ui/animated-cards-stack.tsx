@@ -93,7 +93,7 @@ export const CardsContainer: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
   return (
     <div
       ref={containerRef}
-      className={cn("relative", className)}
+      className={cn("relative overflow-visible", className)}
       {...props}
     >
       {children}

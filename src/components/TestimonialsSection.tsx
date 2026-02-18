@@ -94,7 +94,7 @@ const TestimonialsSection = () => {
                 >
                   <div className="flex flex-col gap-4 w-full">
                     <ReviewStars rating={testimonial.rating} />
-                    <p className="font-body text-[17px] leading-relaxed text-foreground/80 italic">
+                    <p className="font-body text-[19px] leading-relaxed text-foreground/80 italic">
                       „{testimonial.description}"
                     </p>
                   </div>

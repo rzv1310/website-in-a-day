@@ -32,7 +32,7 @@ const HeroSection = () => {
                   key={i}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ delay: 1 + i * (2 / 22), duration: 0.05 }}
+                  transition={{ delay: 1 + i * (1.5 / 22), duration: 0.05 }}
                 >
                   {char}
                 </motion.span>

@@ -1,56 +1,27 @@
 
-# Widget Accesibilitate pentru Persoane cu Dizabilități
+## Actualizare og:image și twitter:image cu poza echipei
 
-## Ce se va construi
+### Ce se va face
 
-Un widget fix în colțul din stânga-jos al paginii, vizibil pe toate secțiunile, cu un buton de activare (iconița de accesibilitate) și un panou cu 3 module + buton de reset, totul în limba română.
+1. Mutarea fișierului `src/assets/echipa_seo_doctor.png` în folderul `public/` — astfel va fi servit static la URL-ul `https://oneday.seo-doctor.ro/echipa_seo_doctor.png` după publicare.
 
-## Structura widgetului
+2. Actualizarea `index.html` — înlocuirea URL-ului curent al imaginii din og:image și twitter:image cu noul URL absolut public.
 
-**Buton de activare** — fix, stânga-jos, cu iconița universală de accesibilitate (♿).
+### Modificări tehnice
 
-**Panou (se deschide la click)** cu 3 secțiuni:
+**Fișiere:**
+- Creare `public/echipa_seo_doctor.png` — copiere din `src/assets/`
+- `index.html` — actualizare liniile 18 și 23:
 
-### 1. Module Conținut (Content Modules)
-- Mărime Font — butoane + / − cu stare afișată
-- Font Lizibil — toggle (activează font Arial/sans-serif mai lizibil)
-- Înălțime Rând — butoane + / −
-- Cursor Mare — toggle (mărește cursorul mouse-ului)
+```
+og:image  → https://oneday.seo-doctor.ro/echipa_seo_doctor.png
+twitter:image → https://oneday.seo-doctor.ro/echipa_seo_doctor.png
+```
 
-### 2. Module Culoare (Color Modules)
-- Contrast Luminos — toggle (fundal alb intens, text negru)
-- Contrast Ridicat — toggle (fundal negru, text galben)
-- Monocrom — toggle (desaturează culorile paginii)
+### De ce nu se poate folosi direct din src/assets
 
-### 3. Module Orientare (Orientation Modules)
-- Linie de Citire — toggle (o linie orizontală urmărește mouse-ul)
-- Mască de Citire — toggle (întunecare parțială a ecranului pentru focus)
-- Ascunde Imagini — toggle (ascunde toate imaginile din pagină)
+Fișierele din `src/assets/` sunt procesate de Vite la build și primesc un hash în nume (ex: `echipa_seo_doctor-a3f9b2.png`). Crawlerele Facebook/Google/Twitter nu pot prezice acest URL și nici nu pot accesa aplicația React. Folderul `public/` este singurul loc unde fișierele sunt servite la URL fix, predictibil.
 
-**Buton Reset** — resetează toate setările la default.
+### Observatie despre dimensiune recomandata
 
-## Implementare tehnică
-
-### Fișiere noi
-- `src/components/AccessibilityWidget.tsx` — componenta completă
-
-### Fișiere modificate
-- `src/pages/Index.tsx` — importare și adăugare `<AccessibilityWidget />` la finalul paginii
-
-### Cum funcționează efectele
-- **Mărime Font**: aplică `font-size` pe `document.documentElement` (scala rem)
-- **Font Lizibil**: adaugă clasă CSS pe `body` ce forțează `font-family: Arial, sans-serif`
-- **Înălțime Rând**: modifică `line-height` pe `document.documentElement`
-- **Cursor Mare**: injectează CSS cursor custom de 64px
-- **Contrast Luminos / Ridicat / Monocrom**: adaugă clase CSS pe `<html>` cu filtre sau override-uri de culori
-- **Linie de Citire**: div fix care urmărește `mousemove`
-- **Mască de Citire**: overlay semi-transparent cu "fereastră" în zona cursorului
-- **Ascunde Imagini**: aplică `img { visibility: hidden }` prin clasă CSS
-
-Toate efectele sunt gestionate în React cu `useState` și `useEffect`, fără librării externe.
-
-### Stilizare
-- Panou alb cu umbră, border-radius, lățime ~320px
-- Culorile accentului maro-auriu din tema existentă
-- Iconițe din `lucide-react` (deja instalat): `Accessibility`, `Plus`, `Minus`, `Sun`, `CircleHalf`, `Monitor`, `Type`, `AlignJustify`, `Pointer`, `MoveHorizontal`, `Ban`, `Image`, `Link`, `RotateCcw`
-- Text complet în română
+Dimensiunea ideala pentru og:image este **1200 x 630 px**. Daca poza echipei are alt format (ex: patrat sau portret), va fi afisata totusi, dar unele platforme pot adauga margini negre sau taia imaginea. Nu este blocant, dar e bine de stiut.

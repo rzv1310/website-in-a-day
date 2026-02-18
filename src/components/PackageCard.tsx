@@ -127,7 +127,7 @@ const PackageCard = ({
           {price}
         </p>
         {optional && (
-          <p className="text-muted-foreground text-[19px] font-light max-w-sm mx-auto">
+          <p className="text-muted-foreground text-[16px] font-light max-w-sm mx-auto">
             {optional}
           </p>
         )}

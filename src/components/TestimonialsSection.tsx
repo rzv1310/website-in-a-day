@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/animated-cards-stack";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import bogdanPhoto from "@/assets/bogdan_lamatic.webp";
+import stefanPhoto from "@/assets/stefan.jpg";
 
 const TESTIMONIALS = [
   {
@@ -47,6 +48,15 @@ const TESTIMONIALS = [
       "Prețul e corect, livrarea e rapidă și rezultatul e wow. Am recomandat deja 3 prieteni. Dacă vrei un site care aduce clienți, Oana e alegerea.",
     avatarUrl:
       "https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=200&auto=format&fit=crop",
+  },
+  {
+    id: "testimonial-5",
+    name: "Stefan B.",
+    profession: "Owner Coffee Shop",
+    rating: 5,
+    description:
+      "Super tare!! Mi-a luat ideea din cap și a făcut-o realitate exact cum mi-am imaginat. John e un adevărat vrăjitor pe partea tehnică la construit site-uri, răspunde repede și e un om de nota 10. Recomand 🤗",
+    avatarUrl: stefanPhoto,
   },
 ];
 

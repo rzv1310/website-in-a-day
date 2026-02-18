@@ -3,6 +3,7 @@ import AccessibilityWidget from "@/components/AccessibilityWidget";
 import RequirementsSection from "@/components/RequirementsSection";
 import StepsSection from "@/components/StepsSection";
 import TeamSection from "@/components/TeamSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import PackagesSection from "@/components/PackagesSection";
 import CtaSection from "@/components/CtaSection";
 import FaqSection from "@/components/FaqSection";
@@ -14,6 +15,7 @@ const Index = () => {
       <RequirementsSection />
       <StepsSection />
       <TeamSection />
+      <TestimonialsSection />
       <PackagesSection />
       <FaqSection />
       <CtaSection />

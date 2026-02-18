@@ -30,7 +30,7 @@ const RequirementsSection = () => {
             <img
               src={echipaImg}
               alt="Echipa Website in One Day"
-              className="w-full max-w-md mx-auto md:mx-0 rounded-sm shadow-gold"
+              className="w-full max-w-md mx-auto md:mx-0 rounded-sm shadow-gold pointer-events-none"
             />
           </motion.div>
 

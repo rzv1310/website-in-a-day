@@ -10,7 +10,7 @@ import FaqSection from "@/components/FaqSection";
 
 const Index = () => {
   return (
-    <div className="bg-background min-h-screen">
+    <div className="bg-background min-h-screen select-none">
       <HeroSection />
       <RequirementsSection />
       <StepsSection />

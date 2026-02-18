@@ -6,17 +6,17 @@ import {
   ReviewStars,
 } from "@/components/ui/animated-cards-stack";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import bogdanPhoto from "@/assets/bogdan_lamatic.webp";
 
 const TESTIMONIALS = [
   {
     id: "testimonial-1",
-    name: "Mihai D.",
-    profession: "Antreprenor, Cluj",
+    name: "Bogdan L.",
+    profession: "Avocat, București",
     rating: 5,
     description:
-      "Site-ul meu a fost gata în 18 ore! Designul e elegant, se încarcă rapid și deja primesc mesaje de la clienți noi. Cea mai bună investiție făcută.",
-    avatarUrl:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop",
+      "Site-ul meu e senzațional! Designul e foarte elegant, se încarcă rapid, iar colegii mei avocați sunt invidioși. Cea mai bună investiție făcută.",
+    avatarUrl: bogdanPhoto,
   },
   {
     id: "testimonial-2",

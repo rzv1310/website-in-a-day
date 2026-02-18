@@ -1,27 +1,50 @@
 
-## Actualizare og:image și twitter:image cu poza echipei
+## Modificări planificate
 
-### Ce se va face
+### 1. Linkuri WhatsApp pe toate butoanele (exceptând Hero Section)
 
-1. Mutarea fișierului `src/assets/echipa_seo_doctor.png` în folderul `public/` — astfel va fi servit static la URL-ul `https://oneday.seo-doctor.ro/echipa_seo_doctor.png` după publicare.
+Numărul de contact: **+40 742 702 982** → `https://wa.me/40742702982`
 
-2. Actualizarea `index.html` — înlocuirea URL-ului curent al imaginii din og:image și twitter:image cu noul URL absolut public.
+Butoanele care vor primi link WhatsApp:
 
-### Modificări tehnice
+| Fișier | Buton |
+|---|---|
+| `TeamSection.tsx` | "Vreau Site în 24 de ore !" |
+| `PackagesSection.tsx` | "Vreau Să Mă Programez !" |
+| `PackagesSection.tsx` | "Vreau Experiența Platinum !" |
+| `CtaSection.tsx` | "Programează un apel" |
 
-**Fișiere:**
-- Creare `public/echipa_seo_doctor.png` — copiere din `src/assets/`
-- `index.html` — actualizare liniile 18 și 23:
+Butonul din `HeroSection.tsx` ("Știm că vrei să afli mai mult") rămâne neschimbat — face scroll la `#pregatire`.
 
+---
+
+### 2. Texte și poze neselectionabile (user-select: none)
+
+Se adaugă clasa Tailwind `select-none` la elementul rădăcină `<div>` din `Index.tsx`, astfel toate secțiunile moștenesc această proprietate fără a modifica fiecare componentă în parte.
+
+```css
+/* echivalent cu: */
+user-select: none;
+-webkit-user-select: none;
 ```
-og:image  → https://oneday.seo-doctor.ro/echipa_seo_doctor.png
-twitter:image → https://oneday.seo-doctor.ro/echipa_seo_doctor.png
-```
 
-### De ce nu se poate folosi direct din src/assets
+---
 
-Fișierele din `src/assets/` sunt procesate de Vite la build și primesc un hash în nume (ex: `echipa_seo_doctor-a3f9b2.png`). Crawlerele Facebook/Google/Twitter nu pot prezice acest URL și nici nu pot accesa aplicația React. Folderul `public/` este singurul loc unde fișierele sunt servite la URL fix, predictibil.
+### 3. Poze cu pointer-events: none
 
-### Observatie despre dimensiune recomandata
+Se adaugă clasa `pointer-events-none` la toate tagurile `<img>` din:
 
-Dimensiunea ideala pentru og:image este **1200 x 630 px**. Daca poza echipei are alt format (ex: patrat sau portret), va fi afisata totusi, dar unele platforme pot adauga margini negre sau taia imaginea. Nu este blocant, dar e bine de stiut.
+- `RequirementsSection.tsx` (poza echipă)
+- `TeamSection.tsx` (pozele membrilor echipei — desktop + mobile)
+- `TestimonialsSection.tsx` (avatarele din testimoniale — via clasa pe `AvatarImage`)
+
+---
+
+### Fișiere modificate
+
+1. `src/pages/Index.tsx` — adaugă `select-none` pe wrapper-ul principal
+2. `src/components/TeamSection.tsx` — link WhatsApp pe buton + `pointer-events-none` pe `<img>`
+3. `src/components/PackagesSection.tsx` — link WhatsApp pe ambele butoane
+4. `src/components/CtaSection.tsx` — link WhatsApp pe buton
+5. `src/components/RequirementsSection.tsx` — `pointer-events-none` pe `<img>`
+6. `src/components/TestimonialsSection.tsx` — `pointer-events-none` pe `AvatarImage`

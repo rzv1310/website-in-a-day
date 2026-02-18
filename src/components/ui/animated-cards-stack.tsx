@@ -65,7 +65,7 @@ export const ContainerScroll: React.FC<React.HTMLAttributes<HTMLDivElement>> = (
   const scrollRef = React.useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: scrollRef,
-    offset: ["start center", "end end"],
+    offset: ["start start", "end end"],
   })
 
   return (

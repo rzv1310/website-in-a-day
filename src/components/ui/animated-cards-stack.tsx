@@ -122,15 +122,22 @@ export const CardTransformed = React.forwardRef<HTMLDivElement, CardStickyProps>
     const start = index / (arrayLength + 1)
     const end = (index + 1) / (arrayLength + 1)
 
-    // Only the top card (current one) flies up; cards below stay put
+    // Idle rotation for stacked cards below (index 0 = straight, others slightly rotated)
+    const idleRotations = [0, -4, 5, -3]
+    const idleRotation = idleRotations[index % idleRotations.length]
+
+    // Card flies up and straightens as it exits
     const y = useTransform(scrollYProgress, [start, end], ["0%", "-130%"])
     const opacity = useTransform(scrollYProgress, [start, end * 0.9, end], [1, 1, 0])
+    // Straighten as the card begins to fly off
+    const rotate = useTransform(scrollYProgress, [Math.max(0, start - 0.05), start], [idleRotation, 0])
 
     const cardStyle = {
       top: index * incrementY,
       zIndex: (arrayLength - index) * incrementZ,
       y,
       opacity,
+      rotate,
       backfaceVisibility: "hidden" as const,
       ...style,
     }

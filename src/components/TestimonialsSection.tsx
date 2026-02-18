@@ -31,7 +31,7 @@ const TESTIMONIALS = [
   {
     id: "testimonial-3",
     name: "Matei R.",
-    profession: "Medic",
+    profession: "Medic, Piatra Neamț",
     rating: 5,
     description:
       "Am avut site la cabinet ani de zile. Acum, după o singură zi, am unul de 10 ori mai bun, mai frumos și mai intuitiv pentru pacienții mei. O recomand cu drag pe Andreea, dar toată echipa e de nota 10 !!",

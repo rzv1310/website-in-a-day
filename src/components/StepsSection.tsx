@@ -84,7 +84,14 @@ const StepsSection = () => {
                   <h3 className="font-display text-2xl text-foreground mb-4">{phase.subtitle}</h3>
                   <ul className="space-y-2">
                     {phase.steps.map((step, j) => (
-                      <li key={j} className="text-muted-foreground font-light text-[19px] leading-relaxed">
+                      <li
+                        key={j}
+                        className={`font-light text-[19px] leading-relaxed ${
+                          step.startsWith("Îți lansăm")
+                            ? "text-foreground font-bold"
+                            : "text-muted-foreground"
+                        }`}
+                      >
                         {step}
                       </li>
                     ))}

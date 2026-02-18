@@ -109,7 +109,6 @@ export const CardTransformed = React.forwardRef<HTMLDivElement, CardStickyProps>
       index,
       incrementY = 10,
       incrementZ = 10,
-      incrementRotation,
       className,
       variant,
       style,
@@ -117,36 +116,22 @@ export const CardTransformed = React.forwardRef<HTMLDivElement, CardStickyProps>
     },
     ref
   ) => {
-    const rotation = incrementRotation ?? -index + 90
     const { scrollYProgress } = useContainerScrollContext()
 
+    // Each card has its own scroll slice
     const start = index / (arrayLength + 1)
     const end = (index + 1) / (arrayLength + 1)
-    const range = React.useMemo(() => [start, end], [start, end])
-    const rotateRange = [range[0] - 1.5, range[1] / 1.5]
 
-    const y = useTransform(scrollYProgress, range, ["0%", "-180%"])
-    const rotate = useTransform(scrollYProgress, rotateRange, [rotation, 0])
-    const transform = useMotionTemplate`translateZ(${
-      index * incrementZ
-    }px) translateY(${y}) rotate(${rotate}deg)`
-
-    const dx = useTransform(scrollYProgress, rotateRange, [4, 0])
-    const dy = useTransform(scrollYProgress, rotateRange, [4, 12])
-    const blur = useTransform(scrollYProgress, rotateRange, [2, 24])
-    const alpha = useTransform(scrollYProgress, rotateRange, [0.15, 0.2])
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    const filter =
-      variant !== "dark"
-        ? useMotionTemplate`drop-shadow(${dx}px ${dy}px ${blur}px rgba(0,0,0,${alpha}))`
-        : "none"
+    // Only the top card (current one) flies up; cards below stay put
+    const y = useTransform(scrollYProgress, [start, end], ["0%", "-130%"])
+    const opacity = useTransform(scrollYProgress, [start, end * 0.9, end], [1, 1, 0])
 
     const cardStyle = {
       top: index * incrementY,
-      transform,
-      backfaceVisibility: "hidden" as const,
       zIndex: (arrayLength - index) * incrementZ,
-      filter,
+      y,
+      opacity,
+      backfaceVisibility: "hidden" as const,
       ...style,
     }
 

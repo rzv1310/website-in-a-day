@@ -78,8 +78,8 @@ const TestimonialsSection = () => {
                   arrayLength={TESTIMONIALS.length}
                   index={index}
                   variant="light"
-                  incrementY={14}
-                  incrementZ={8}
+                  incrementY={12}
+                  incrementZ={10}
                   className="border-border/60 bg-card/90 shadow-gold"
                 >
                   <div className="flex flex-col gap-4 w-full">

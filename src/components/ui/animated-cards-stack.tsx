@@ -65,7 +65,7 @@ export const ContainerScroll: React.FC<React.HTMLAttributes<HTMLDivElement>> = (
   const scrollRef = React.useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: scrollRef,
-    offset: ["start center", "end end"],
+    offset: ["start start", "end end"],
   })
 
   return (
@@ -118,17 +118,19 @@ export const CardTransformed = React.forwardRef<HTMLDivElement, CardStickyProps>
   ) => {
     const { scrollYProgress } = useContainerScrollContext()
 
-    // Each card has its own scroll slice
-    const start = index / (arrayLength + 1)
-    const end = (index + 1) / (arrayLength + 1)
+    const isLast = index === arrayLength - 1
+    // Only the first N-1 cards fly off; the last card stays visible
+    const flyingCards = arrayLength - 1
+    const start = isLast ? 1 : index / flyingCards
+    const end = isLast ? 1 : (index + 1) / flyingCards
 
     // Idle rotation for stacked cards below (index 0 = straight, others slightly rotated)
     const idleRotations = [0, -4, 5, -3]
     const idleRotation = idleRotations[index % idleRotations.length]
 
-    // Card flies up and straightens as it exits
-    const y = useTransform(scrollYProgress, [start, end], ["0%", "-130%"])
-    const opacity = useTransform(scrollYProgress, [start, end * 0.9, end], [1, 1, 0])
+    // Card flies up and straightens as it exits; last card stays put
+    const y = useTransform(scrollYProgress, [start, end], isLast ? ["0%", "0%"] : ["0%", "-130%"])
+    const opacity = useTransform(scrollYProgress, isLast ? [0, 1] : [start, end * 0.9, end], isLast ? [1, 1] : [1, 1, 0])
     // Straighten as the card begins to fly off
     const rotate = useTransform(scrollYProgress, [Math.max(0, start - 0.05), start], [idleRotation, 0])
 

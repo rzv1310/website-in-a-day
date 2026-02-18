@@ -62,7 +62,7 @@ const TESTIMONIALS = [
 
 const TestimonialsSection = () => {
   return (
-    <section id="testimoniale" className="py-24 md:py-32 px-6 bg-background">
+    <section id="testimoniale" className="pt-24 md:pt-32 px-6 bg-background">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -79,8 +79,8 @@ const TestimonialsSection = () => {
           <div className="divider-gold w-16 mx-auto mt-6" />
         </motion.div>
 
-        <ContainerScroll className="h-[80vh]">
-          <div className="sticky top-[10vh] h-[60vh] flex items-start justify-center overflow-visible">
+        <ContainerScroll className="h-[190vh]">
+          <div className="sticky top-[20vh] h-[60vh] flex items-start justify-center overflow-visible">
             <CardsContainer className="relative w-full max-w-lg h-[400px] mx-auto overflow-visible">
               {TESTIMONIALS.map((testimonial, index) => (
                 <CardTransformed

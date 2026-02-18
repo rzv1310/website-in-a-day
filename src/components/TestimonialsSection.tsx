@@ -30,11 +30,11 @@ const TESTIMONIALS = [
   },
   {
     id: "testimonial-3",
-    name: "Radu T.",
-    profession: "Proprietar Salon, Iași",
+    name: "Matei R.",
+    profession: "Medic Stomatolog",
     rating: 5,
     description:
-      "Am avut site la altă firmă ani de zile. Acum, după un singur zi cu echipa asta, am un site de 10 ori mai bun. Clienții mă întreabă cine mi l-a făcut.",
+      "Am avut site la cabinet ani de zile. Acum, după o singură zi, am unul de 10 ori mai bun, mai frumos și mai intuitiv pentru pacienții mei. O recomand cu drag pe Andreea, dar toată echipa e de nota 10 !!",
     avatarUrl:
       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&auto=format&fit=crop",
   },

@@ -56,7 +56,7 @@ const FaqSection = () => {
           <p className="text-foreground/80 font-light text-[19px] leading-relaxed">
             Mai jos găsești cele mai întâlnite întrebări. Dacă nu vezi răspunsul pe care îl cauți,{" "}
             <a href="https://wa.me/40742702982" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#25D366] text-white font-medium px-3 py-1 rounded-md no-underline hover:opacity-90 transition-opacity text-[17px]">
-              scrie-ne în whatsapp aici
+              scrie-ne în WhatsApp aici
             </a>{" "}
             și îți răspundem cu drag!
           </p>

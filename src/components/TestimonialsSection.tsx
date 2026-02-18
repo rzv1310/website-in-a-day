@@ -70,8 +70,8 @@ const TestimonialsSection = () => {
         </motion.div>
 
         <ContainerScroll className="h-[160vh]">
-          <div className="sticky top-[15vh] h-[70vh] flex items-start justify-center">
-            <CardsContainer className="relative w-full max-w-lg h-[420px] mx-auto">
+          <div className="sticky top-[15vh] h-[70vh] flex items-start justify-center overflow-visible">
+            <CardsContainer className="relative w-full max-w-lg h-[400px] mx-auto overflow-visible">
               {TESTIMONIALS.map((testimonial, index) => (
                 <CardTransformed
                   key={testimonial.id}

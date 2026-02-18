@@ -62,7 +62,7 @@ const PackagesSection = () => {
           tier="Pachet Platinum (+1 zi)"
           title="Ce Primești"
           description=""
-          price="1.370 €"
+          price="1370 €"
           optional="* se poate achita în max. 2 rate lunare"
           pages={[]}
           included={[

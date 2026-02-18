@@ -8,6 +8,7 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import bogdanPhoto from "@/assets/bogdan_lamatic.webp";
 import stefanPhoto from "@/assets/stefan.jpg";
+import mihaelaPhoto from "@/assets/mihaela.jpg";
 
 const TESTIMONIALS = [
   {
@@ -26,8 +27,7 @@ const TESTIMONIALS = [
     rating: 5,
     description:
       "Sincer, nu credeam că e posibil așa un site profi în 24 de ore. M-am înșelat. Totul arată exact cum mi-am dorit și funcționează perfect pe mobil. Mulțumesc Oana ❤️❤️❤️",
-    avatarUrl:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&auto=format&fit=crop",
+    avatarUrl: mihaelaPhoto,
   },
   {
     id: "testimonial-3",

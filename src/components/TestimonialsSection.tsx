@@ -101,7 +101,7 @@ const TestimonialsSection = () => {
 
                   <div className="flex items-center gap-3 w-full pt-2 border-t border-border/40">
                     <Avatar className="size-11 border border-border">
-                      <AvatarImage src={testimonial.avatarUrl} alt={testimonial.name} />
+                      <AvatarImage src={testimonial.avatarUrl} alt={testimonial.name} className="pointer-events-none" />
                       <AvatarFallback className="bg-secondary text-primary font-body text-sm">
                         {testimonial.name.split(" ").map((n) => n[0]).join("")}
                       </AvatarFallback>

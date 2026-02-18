@@ -56,7 +56,7 @@ const TeamSection = () => {
               <img
                 src={member.img}
                 alt={member.name}
-                className="w-full max-w-xs mx-auto rounded-sm shadow-gold"
+                className="w-full max-w-xs mx-auto rounded-sm shadow-gold pointer-events-none"
               />
             </motion.div>
           ))}
@@ -76,7 +76,7 @@ const TeamSection = () => {
                 <img
                   src={member.img}
                   alt={member.name}
-                  className="w-full max-w-xs mx-auto rounded-sm shadow-gold"
+                  className="w-full max-w-xs mx-auto rounded-sm shadow-gold pointer-events-none"
                 />
               </motion.div>
               {i === 0 && (
@@ -126,7 +126,9 @@ const TeamSection = () => {
             Noi nu facem doar „să arate frumos". Facem să-ți aducă bani.
           </p>
           <a
-            href="#pachete"
+            href="https://wa.me/40742702982"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-base hover:opacity-90 transition-opacity"
           >
             Vreau Site în 24 de ore !

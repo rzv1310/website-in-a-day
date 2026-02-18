@@ -48,8 +48,10 @@ const PackagesSection = () => {
         {/* CTA between packages */}
         <div className="text-center">
           <a
-            href="#"
-              className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-base hover:opacity-90 transition-opacity"
+            href="https://wa.me/40742702982"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-base hover:opacity-90 transition-opacity"
           >
             Vreau Să Mă Programez !
           </a>
@@ -93,7 +95,9 @@ const PackagesSection = () => {
         {/* CTA after Platinum */}
         <div className="text-center">
           <a
-            href="#"
+            href="https://wa.me/40742702982"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-base hover:opacity-90 transition-opacity"
           >
             Vreau Experiența Platinum !

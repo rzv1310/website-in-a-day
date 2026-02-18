@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import AccessibilityWidget from "@/components/AccessibilityWidget";
 import RequirementsSection from "@/components/RequirementsSection";
 import StepsSection from "@/components/StepsSection";
 import TeamSection from "@/components/TeamSection";
@@ -16,6 +17,7 @@ const Index = () => {
       <PackagesSection />
       <FaqSection />
       <CtaSection />
+      <AccessibilityWidget />
     </div>
   );
 };

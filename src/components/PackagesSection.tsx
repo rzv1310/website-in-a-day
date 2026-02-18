@@ -77,7 +77,7 @@ const PackagesSection = () => {
             "LLM.txt (pentru a putea fi descoperit de ChatGPT, Google AI Overviews).",
             "OpenGraph cards (pentru share WhatsApp/Facebook/Twitter).",
             "Banner (pop-up) Cookies (consimțământ user).",
-            "Basic widget pt persoane cu dizabilități.",
+            "Widget pt persoane cu dizabilități.",
             "Nume domeniu (1 an).",
             "Găzduire domeniu (1 an).",
             "Mentenanță tehnică (1 an).",

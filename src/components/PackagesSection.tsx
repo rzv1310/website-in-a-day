@@ -56,6 +56,7 @@ const PackagesSection = () => {
         </div>
 
         {/* Platinum */}
+        <div className="pt-8" />
         <PackageCard
           highlight
           tier="Pachet Platinum (+1 zi)"

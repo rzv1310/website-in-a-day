@@ -59,7 +59,8 @@ const RequirementsSection = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1, duration: 0.5 }}
-                  className="flex items-center gap-4 p-4 rounded-sm border border-gold bg-secondary/30"
+                  className="flex items-center gap-4 p-4 rounded-sm border border-gold"
+                  style={{ backgroundColor: "#ffebce" }}
                 >
                   <item.icon className="w-5 h-5 text-primary shrink-0" />
                   <span className="text-foreground/90 font-light text-[19px]">{item.text}</span>

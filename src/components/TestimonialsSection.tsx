@@ -40,11 +40,11 @@ const TESTIMONIALS = [
   },
   {
     id: "testimonial-4",
-    name: "Elena M.",
-    profession: "Coach & Trainer, Timișoara",
+    name: "Anca B.",
+    profession: "Manager Clinică Cluj",
     rating: 5,
     description:
-      "Prețul e corect, livrarea e rapidă și rezultatul e wow. Am recomandat deja 3 prieteni. Dacă vrei un site care aduce clienți, aceasta e alegerea.",
+      "Prețul e corect, livrarea e rapidă și rezultatul e wow. Am recomandat deja 3 prieteni. Dacă vrei un site care aduce clienți, Oana e alegerea.",
     avatarUrl:
       "https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=200&auto=format&fit=crop",
   },

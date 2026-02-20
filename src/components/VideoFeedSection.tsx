@@ -108,7 +108,7 @@ const VideoFeedSection = () => {
         </motion.div>
 
         {/* Grid: 1 col on mobile, 2 cols on desktop */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-12 justify-items-center">
           {VIDEOS.map((video, idx) => (
             <motion.div
               key={video.id}

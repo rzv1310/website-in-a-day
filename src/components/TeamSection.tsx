@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import oanaImg from "@/assets/Oana.png";
-import andreeaImg from "@/assets/Andreea.png";
-import johnImg from "@/assets/john.png";
+import oanaImg from "@/assets/Oana.webp";
+import andreeaImg from "@/assets/Andreea.webp";
+import ioanImg from "@/assets/ioan.webp";
 
 
 const team = [
   { name: "Oana", role: "Head Designer", img: oanaImg },
   { name: "Andreea", role: "Creative Director", img: andreeaImg },
-  { name: "John", role: "Web Developer", img: johnImg },
+  { name: "Ioan", role: "Web Developer", img: ioanImg },
 ];
 
 const TeamSection = () => {

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Camera, MapPin, Phone, Users, List, DollarSign, Building } from "lucide-react";
-import echipaImg from "@/assets/echipa_seo_doctor.png";
+import echipaImg from "@/assets/echipa_seo_doctor.webp";
 
 const items = [
   { icon: Building, text: "Nume Business (+ poze)" },

@@ -37,7 +37,7 @@ const TeamSection = () => {
           viewport={{ once: true }}
           className="hidden md:block max-w-3xl mx-auto text-center mb-16"
         >
-           <p className="text-primary font-light font-body text-[21px] leading-relaxed">
+           <p className="text-foreground font-light font-body text-[21px] leading-relaxed">
             Când lucrăm împreună, business-ul tău devine și „copilul" nostru și îl facem să arate fix cum trebuie în cel mai scurt timp posibil.
           </p>
         </motion.div>
@@ -84,7 +84,7 @@ const TeamSection = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="text-primary font-light font-body text-[21px] leading-relaxed text-center max-w-3xl mx-auto mt-8"
+                  className="text-foreground font-light font-body text-[21px] leading-relaxed text-center max-w-3xl mx-auto mt-8"
                 >
                   Când lucrăm împreună, business-ul tău devine și „copilul" nostru și îl facem să arate fix cum trebuie în cel mai scurt timp posibil.
                 </motion.p>
@@ -94,7 +94,7 @@ const TeamSection = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="text-primary font-light font-body text-[21px] leading-relaxed text-center max-w-3xl mx-auto mt-8"
+                  className="text-foreground font-light font-body text-[21px] leading-relaxed text-center max-w-3xl mx-auto mt-8"
                 >
                   Cu background-ul nostru în Marketing, Administrarea Afacerilor și IT, știm ce anume face ca un design să vândă pe bune și cum îl adaptăm ca să vorbească perfect pe limba publicului tău țintă.
                 </motion.p>
@@ -110,7 +110,7 @@ const TeamSection = () => {
           viewport={{ once: true }}
           className="hidden md:block max-w-3xl mx-auto text-center mb-8"
         >
-          <p className="text-primary font-light font-body text-[21px] leading-relaxed">
+          <p className="text-foreground font-light font-body text-[21px] leading-relaxed">
             Cu background-ul nostru în Marketing, Administrarea Afacerilor și IT, știm ce anume face ca un design să vândă pe bune și cum îl adaptăm ca să vorbească perfect pe limba publicului tău țintă.
           </p>
         </motion.div>

@@ -19,7 +19,7 @@ const IntroSection = () => {
           whileInView="visible"
           viewport={{ once: true }}
           custom={0}
-          className="text-[21px] md:text-xl text-foreground/90 font-light leading-relaxed"
+          className="text-[21px] md:text-xl text-foreground font-light leading-relaxed"
         >
           Tocmai ai pășit în locul unde site-urile premium prind viață repede.
         </motion.p>
@@ -30,7 +30,7 @@ const IntroSection = () => {
           whileInView="visible"
           viewport={{ once: true }}
           custom={1}
-          className="text-muted-foreground leading-relaxed"
+          className="text-foreground leading-relaxed"
         >
           Știm că timpul înseamnă bani și vrem să te ajutăm să ai o imagine online de calitate,{" "}
           <span className="text-primary italic">'la cheie'</span>, ca să te apuci de treabă cât

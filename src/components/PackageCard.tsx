@@ -52,7 +52,7 @@ const PackageCard = ({
           <p className="text-muted-foreground text-[19px] italic">{subtitle}</p>
         )}
         <div className="divider-gold w-16 mx-auto my-6" />
-        <p className="text-foreground/80 font-light leading-relaxed max-w-xl mx-auto text-[21px]">
+        <p className="text-dark-gray md:text-foreground/80 font-light leading-relaxed max-w-xl mx-auto text-[19px] md:text-[21px] font-lora md:font-body">
           {description}
         </p>
       </div>
@@ -67,7 +67,7 @@ const PackageCard = ({
             {pages.map((page, i) => (
               <div key={i} className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-primary shrink-0" />
-                  <span className="text-foreground/80 text-[21px] font-light">{page}</span>
+                  <span className="text-dark-gray md:text-foreground/80 text-[19px] md:text-[21px] font-light font-lora md:font-body">{page}</span>
               </div>
             ))}
           </div>
@@ -84,7 +84,7 @@ const PackageCard = ({
             {legalPages.map((page, i) => (
               <div key={i} className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-primary shrink-0" />
-                <span className="text-foreground/80 text-[21px] font-light">{page}</span>
+                <span className="text-dark-gray md:text-foreground/80 text-[19px] md:text-[21px] font-light font-lora md:font-body">{page}</span>
               </div>
             ))}
           </div>
@@ -100,7 +100,7 @@ const PackageCard = ({
           {included.map((item, i) => (
             <div key={i} className="flex items-start gap-2">
               <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-              <span className={`text-foreground/80 text-[21px] ${item.startsWith("Totul din") ? "font-bold" : "font-light"}`}>{item}</span>
+              <span className={`text-dark-gray md:text-foreground/80 text-[19px] md:text-[21px] font-lora md:font-body ${item.startsWith("Totul din") ? "font-bold" : "font-light"}`}>{item}</span>
             </div>
           ))}
         </div>
@@ -110,7 +110,7 @@ const PackageCard = ({
         {preRecap && preRecap.length > 0 && (
           <div className="mb-8 space-y-2">
             {preRecap.map((line, i) => (
-              <p key={i} className={`font-light italic font-display leading-relaxed ${line.startsWith("Ce primești aici este") ? "text-[20px] !mt-8" : "text-[19px]"} ${line.includes("vecin") ? "text-foreground" : "text-primary"}`}>
+              <p key={i} className={`font-light italic font-display leading-relaxed font-lora md:font-display ${line.startsWith("Ce primești aici este") ? "text-[20px] !mt-8" : "text-[19px]"} ${line.includes("vecin") ? "text-dark-gray md:text-foreground" : "text-dark-gray md:text-primary"}`}>
                 {line}
               </p>
             ))}
@@ -127,7 +127,7 @@ const PackageCard = ({
           {price}
         </p>
         {optional && (
-          <p className="text-muted-foreground text-[21px] font-light max-w-sm mx-auto">
+          <p className="text-dark-gray md:text-muted-foreground text-[19px] md:text-[21px] font-light font-lora md:font-body max-w-sm mx-auto">
             {optional}
           </p>
         )}

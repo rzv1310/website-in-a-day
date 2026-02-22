@@ -19,7 +19,7 @@ const IntroSection = () => {
           whileInView="visible"
           viewport={{ once: true }}
           custom={0}
-          className="text-[21px] md:text-xl text-foreground font-light leading-relaxed font-lora md:font-body"
+          className="text-[21px] md:text-xl text-foreground font-light leading-relaxed intro-text"
         >
           Tocmai ai pășit în locul unde site-urile premium prind viață repede.
         </motion.p>
@@ -30,7 +30,7 @@ const IntroSection = () => {
           whileInView="visible"
           viewport={{ once: true }}
           custom={1}
-          className="text-foreground leading-relaxed font-lora md:font-body"
+          className="text-foreground leading-relaxed intro-text"
         >
           Știm că timpul înseamnă bani și vrem să te ajutăm să ai o imagine online de calitate,{" "}
           <span className="text-primary italic">'la cheie'</span>, ca să te apuci de treabă cât
@@ -43,7 +43,7 @@ const IntroSection = () => {
           whileInView="visible"
           viewport={{ once: true }}
           custom={2}
-          className="text-foreground font-lora md:font-display text-xl md:text-2xl italic"
+          className="text-foreground intro-text intro-text-display text-xl md:text-2xl italic"
         >
           Prin procesul nostru optimizat de design, poți avea un site web complet personalizat în
           doar{" "}

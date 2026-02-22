@@ -74,6 +74,19 @@
   }
 }
 
+  .intro-text {
+    font-family: 'Lora', serif !important;
+  }
+
+@media (min-width: 768px) {
+  .intro-text {
+    font-family: 'Cormorant Garamond', serif !important;
+  }
+  .intro-text-display {
+    font-family: 'Playfair Display', serif !important;
+  }
+}
+
 @layer utilities {
   .text-gradient-gold {
     background: linear-gradient(135deg, hsl(30 35% 50%), hsl(25 45% 35%), hsl(20 55% 25%));

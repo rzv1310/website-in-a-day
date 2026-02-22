@@ -74,17 +74,8 @@
   }
 }
 
-  .intro-text {
-    font-family: 'Lora', serif !important;
-  }
-
-@media (min-width: 768px) {
-  .intro-text {
-    font-family: 'Cormorant Garamond', serif !important;
-  }
-  .intro-text-display {
-    font-family: 'Playfair Display', serif !important;
-  }
+.intro-text {
+  font-family: 'Lora', serif !important;
 }
 
 @layer utilities {

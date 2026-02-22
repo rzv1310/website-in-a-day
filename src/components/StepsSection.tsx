@@ -88,8 +88,8 @@ const StepsSection = () => {
                         key={j}
                         className={`font-light text-[21px] leading-relaxed ${
                           step.startsWith("Îți lansăm")
-                            ? "text-primary font-bold"
-                            : "text-muted-foreground"
+                            ? "text-foreground font-bold"
+                            : "text-foreground"
                         }`}
                       >
                         {step}

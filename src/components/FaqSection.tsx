@@ -79,7 +79,7 @@ const FaqSection = () => {
               <h3 className="font-display text-[19px] md:text-[19px] font-semibold text-foreground mb-3">
                 {faq.question}
               </h3>
-              <p className="text-primary font-body text-[19px] leading-relaxed whitespace-pre-line">
+              <p className="text-foreground font-body text-[19px] leading-relaxed whitespace-pre-line">
                 {faq.answer}
               </p>
               {(faq as any).hasWhatsappLink && (

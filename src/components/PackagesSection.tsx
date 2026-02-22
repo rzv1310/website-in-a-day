@@ -51,7 +51,7 @@ const PackagesSection = () => {
             href="https://wa.me/40742702982"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-base hover:opacity-90 transition-opacity"
+            className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-[18px] hover:opacity-90 transition-opacity"
           >
             Vreau Să Mă Programez !
           </a>
@@ -98,7 +98,7 @@ const PackagesSection = () => {
             href="https://wa.me/40742702982"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-base hover:opacity-90 transition-opacity"
+            className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-[18px] hover:opacity-90 transition-opacity"
           >
             Vreau Experiența Platinum !
           </a>

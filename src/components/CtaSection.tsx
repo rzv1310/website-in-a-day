@@ -15,7 +15,7 @@ const CtaSection = () => {
           <span className="text-primary italic">noua ta imagine digitală</span>?
         </h2>
         <div className="divider-gold w-16 mx-auto my-8" />
-        <p className="text-muted-foreground font-light mb-10 text-[19px]">
+        <p className="text-foreground font-light mb-10 text-[19px]">
           Hai să vorbim. Primul pas e un simplu apel.
         </p>
         <a

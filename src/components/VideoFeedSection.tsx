@@ -101,9 +101,6 @@ const VideoFeedSection = () => {
           <p className="text-[19px] tracking-[0.3em] uppercase text-primary mb-4 font-body">
             Testimoniale Video
           </p>
-          <h2 className="font-display text-3xl md:text-4xl text-foreground">
-            Ascultă poveștile clienților
-          </h2>
           <div className="divider-gold w-16 mx-auto mt-6" />
         </motion.div>
 

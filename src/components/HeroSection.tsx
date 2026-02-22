@@ -67,14 +67,14 @@ const HeroSection = () => {
           transition={{ delay: 1.2, duration: 0.8 }}
           className="mt-16 max-w-3xl mx-auto space-y-6"
         >
-            <p className="text-[19px] md:text-[21px] text-primary md:text-foreground leading-relaxed intro-text">
+            <p className="text-[19px] text-primary md:text-foreground leading-relaxed intro-text">
             Tocmai ai pășit în locul unde site-urile premium prind viață repede.
           </p>
-            <p className="text-[19px] md:text-[21px] text-primary md:text-foreground leading-relaxed intro-text">
+            <p className="text-[19px] text-primary md:text-foreground leading-relaxed intro-text">
             Știm că timpul înseamnă bani și vrem să te ajutăm să ai o imagine online de calitate,{" "}
             'la cheie', ca să te apuci de treabă cât mai curând!
           </p>
-          <p className="text-[19px] md:text-[21px] text-primary md:text-foreground leading-relaxed intro-text intro-text-display">
+          <p className="text-[19px] text-primary md:text-foreground leading-relaxed intro-text">
             Prin procesul nostru optimizat de design, poți avea un site web complet personalizat în
             doar{" "}
             <span className="italic font-bold">o singură zi</span>.

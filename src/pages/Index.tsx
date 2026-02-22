@@ -8,6 +8,7 @@ import VideoFeedSection from "@/components/VideoFeedSection";
 import PackagesSection from "@/components/PackagesSection";
 import CtaSection from "@/components/CtaSection";
 import FaqSection from "@/components/FaqSection";
+import CookieConsent from "@/components/CookieConsent";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       <FaqSection />
       <CtaSection />
       <AccessibilityWidget />
+      <CookieConsent />
     </div>
   );
 };

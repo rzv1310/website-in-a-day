@@ -19,7 +19,7 @@ const IntroSection = () => {
           whileInView="visible"
           viewport={{ once: true }}
           custom={0}
-          className="text-[19px] md:text-xl text-foreground/90 font-light leading-relaxed"
+          className="text-[21px] md:text-xl text-foreground/90 font-light leading-relaxed"
         >
           Tocmai ai pășit în locul unde site-urile premium prind viață repede.
         </motion.p>

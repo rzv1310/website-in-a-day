@@ -65,7 +65,7 @@ const PackagesSection = () => {
           title="Ce Primești"
           description=""
           price="1370 €"
-          optional="* se poate achita în max. 2 rate lunare"
+          optional="* se poate achita în 2 rate"
           pages={[]}
           included={[
             "Totul din Pachetul Gold +",

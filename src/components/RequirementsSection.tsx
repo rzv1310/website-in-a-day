@@ -63,7 +63,7 @@ const RequirementsSection = () => {
                   style={{ backgroundColor: "#ffebce" }}
                 >
                   <item.icon className="w-5 h-5 text-primary shrink-0" />
-                  <span className="text-foreground font-light text-[21px]">{item.text}</span>
+                  <span className="text-dark-gray md:text-foreground font-light text-[19px] md:text-[21px] font-lora md:font-body">{item.text}</span>
                 </motion.div>
               ))}
             </div>

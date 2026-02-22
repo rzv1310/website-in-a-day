@@ -86,10 +86,10 @@ const StepsSection = () => {
                     {phase.steps.map((step, j) => (
                       <li
                         key={j}
-                        className={`font-light text-[21px] leading-relaxed ${
+                        className={`font-light text-[19px] md:text-[21px] leading-relaxed font-lora md:font-body ${
                           step.startsWith("Îți lansăm")
-                            ? "text-foreground font-bold"
-                            : "text-foreground"
+                            ? "text-dark-gray md:text-foreground font-bold"
+                            : "text-dark-gray md:text-foreground"
                         }`}
                       >
                         {step}

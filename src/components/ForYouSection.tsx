@@ -43,7 +43,20 @@ const ForYouSection = () => {
             >
               <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
               <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
-                <span className="font-semibold">Ai o afacere locală care nu vinde produse fizice</span> (de ex.: cabinete medicale, avocați, contabili, psihologi, consultanți, designeri, profesori, instalatori, electricieni, artiști, saloane beauty) sau firme noi care vor să intre în piață cu un impact vizual puternic.
+                <span className="font-semibold">Ai o afacere locală care nu vinde produse fizice</span> (de ex.: cabinete medicale, avocați, contabili, psihologi, consultanți, designeri, profesori, instalatori, electricieni, artiști, saloane beauty).
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              className="flex items-start gap-4"
+            >
+              <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
+              <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
+                Ai o firmă nouă și vrei să intri în piață cu un impact vizual puternic.
               </p>
             </motion.div>
           </div>

@@ -21,13 +21,13 @@ const SpiralCtaSection = () => {
           target="_blank"
           rel="noopener noreferrer"
           className={`
-            text-primary font-display text-sm md:text-lg tracking-[0.3em] uppercase
+            text-primary font-display text-sm md:text-lg tracking-[0.3em] uppercase text-center leading-relaxed
             transition-all duration-1000 ease-out cursor-pointer
             hover:tracking-[0.5em] hover:opacity-80
             ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}
           `}
         >
-          Vreau Site
+          Vreau<br />Site
         </a>
       </div>
     </section>

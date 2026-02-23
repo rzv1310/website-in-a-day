@@ -17,7 +17,7 @@ const SpiralCtaSection = () => {
         </div>
       </div>
 
-      <div className="absolute inset-0 z-10 flex items-center justify-center">
+      <div className="absolute inset-0 z-10 flex items-end justify-center pb-8 md:pb-12">
         <a
           href="https://wa.me/40742702982"
           target="_blank"

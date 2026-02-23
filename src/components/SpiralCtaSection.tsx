@@ -10,7 +10,7 @@ const SpiralCtaSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-[70vh] md:h-[80vh] overflow-hidden">
+    <section className="relative w-full h-[60vh] md:h-[70vh] overflow-hidden pt-0">
       <div className="absolute inset-0 z-0">
         <SpiralAnimation />
       </div>
@@ -21,7 +21,7 @@ const SpiralCtaSection = () => {
           target="_blank"
           rel="noopener noreferrer"
           className={`
-            text-white font-display text-2xl md:text-4xl tracking-[0.3em] uppercase
+            text-primary font-display text-lg md:text-2xl tracking-[0.3em] uppercase
             transition-all duration-1000 ease-out cursor-pointer
             hover:tracking-[0.5em] hover:opacity-80
             ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}

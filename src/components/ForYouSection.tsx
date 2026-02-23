@@ -1,6 +1,26 @@
 import { motion } from "framer-motion";
 import { Check, ArrowRight } from "lucide-react";
 
+const UnderlinedText = ({ children, delay }: { children: React.ReactNode; delay: number }) => (
+  <motion.span
+    className="relative inline"
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+  >
+    {children}
+    <motion.span
+      className="absolute left-0 bottom-0 h-[2px] bg-orange-500 origin-left"
+      variants={{
+        hidden: { scaleX: 0 },
+        visible: { scaleX: 1 }
+      }}
+      transition={{ delay, duration: 0.8, ease: "easeOut" }}
+      style={{ width: "100%" }}
+    />
+  </motion.span>
+);
+
 const ForYouSection = () => {
   return (
     <section id="pentru-tine" className="py-24 md:py-32 px-6 bg-section-beige">
@@ -30,7 +50,7 @@ const ForYouSection = () => {
             >
               <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
               <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
-                Ai nevoie de un <span className="font-semibold">site de prezentare</span>, funcțional, estetic și publicat rapid, fără să te pierzi în termeni tehnici sau luni de așteptare.
+                Ai nevoie de un <UnderlinedText delay={0.5}>site de prezentare</UnderlinedText>, funcțional, estetic și publicat rapid, fără să te pierzi în termeni tehnici sau luni de așteptare.
               </p>
             </motion.div>
 
@@ -43,7 +63,7 @@ const ForYouSection = () => {
             >
               <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
               <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
-                <span className="font-semibold">Ai o afacere locală care nu vinde produse fizice</span> (de ex.: cabinete medicale, avocați, contabili, psihologi, consultanți, designeri, profesori, instalatori, electricieni, artiști, saloane beauty).
+                <UnderlinedText delay={2}>Ai o afacere locală care nu vinde produse fizice</UnderlinedText> (de ex.: cabinete medicale, avocați, contabili, psihologi, consultanți, designeri, profesori, instalatori, electricieni, artiști, saloane beauty).
               </p>
             </motion.div>
 
@@ -56,7 +76,7 @@ const ForYouSection = () => {
             >
               <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
               <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
-                Ai o <span className="font-semibold">firmă nouă</span> și vrei să intri în piață cu un impact vizual puternic.
+                Ai o <UnderlinedText delay={3.5}>firmă nouă</UnderlinedText> și vrei să intri în piață cu un impact vizual puternic.
               </p>
             </motion.div>
 
@@ -69,23 +89,7 @@ const ForYouSection = () => {
             >
               <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
               <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
-                <motion.span
-                  className="relative inline"
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                >
-                  Ai deja un site, dar care nu-ți aduce clienți
-                  <motion.span
-                    className="absolute left-0 bottom-0 h-[2px] bg-orange-500 origin-left"
-                    variants={{
-                      hidden: { scaleX: 0 },
-                      visible: { scaleX: 1 }
-                    }}
-                    transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
-                    style={{ width: "100%" }}
-                  />
-                </motion.span>
+                <UnderlinedText delay={5}>Ai deja un site, dar care nu-ți aduce clienți</UnderlinedText>
                 {" "}(îl refacem complet în doar o zi și îl optimizăm ca să-ți aducă mai multe apeluri).
               </p>
             </motion.div>

@@ -69,7 +69,24 @@ const ForYouSection = () => {
             >
               <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
               <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
-                Ai deja un site, dar care nu-ți aduce clienți (îl refacem complet în doar o zi și îl optimizăm ca să-ți aducă mai multe apeluri).
+                <motion.span
+                  className="relative inline"
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                >
+                  Ai deja un site, dar care nu-ți aduce clienți
+                  <motion.span
+                    className="absolute left-0 bottom-0 h-[2px] bg-orange-500 origin-left"
+                    variants={{
+                      hidden: { scaleX: 0 },
+                      visible: { scaleX: 1 }
+                    }}
+                    transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
+                    style={{ width: "100%" }}
+                  />
+                </motion.span>
+                {" "}(îl refacem complet în doar o zi și îl optimizăm ca să-ți aducă mai multe apeluri).
               </p>
             </motion.div>
           </div>

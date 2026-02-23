@@ -30,7 +30,7 @@ const ForYouSection = () => {
             >
               <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
               <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
-                Ai nevoie de un site de prezentare, funcțional, estetic și publicat rapid, fără să te pierzi în termeni tehnici sau luni de așteptare.
+                Ai nevoie de un <span className="font-semibold">site de prezentare</span>, funcțional, estetic și publicat rapid, fără să te pierzi în termeni tehnici sau luni de așteptare.
               </p>
             </motion.div>
 
@@ -56,7 +56,7 @@ const ForYouSection = () => {
             >
               <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
               <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
-                Ai o firmă nouă și vrei să intri în piață cu un impact vizual puternic.
+                Ai o <span className="font-semibold">firmă nouă</span> și vrei să intri în piață cu un impact vizual puternic.
               </p>
             </motion.div>
           </div>

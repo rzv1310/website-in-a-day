@@ -54,7 +54,7 @@ const CookieConsent = () => {
                 <h3 className="font-display text-base font-semibold text-foreground mb-1">
                   🍪 Folosim cookies
                 </h3>
-                <p className="font-body text-sm text-muted-foreground leading-relaxed">
+                <p className="font-body text-base sm:text-sm text-muted-foreground leading-relaxed">
                   Acest site folosește cookies pentru a îmbunătăți experiența ta și pentru analiză de trafic. 
                   Prin acceptare, ești de acord cu utilizarea acestora.
                 </p>

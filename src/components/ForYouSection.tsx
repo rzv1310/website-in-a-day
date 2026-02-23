@@ -81,7 +81,7 @@ const ForYouSection = () => {
         >
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl text-foreground">
-              Vom avea nevoie de o abordare diferită dacă:
+              Această ofertă nu este pentru tine, dacă:
             </h2>
             <div className="divider-gold w-16 mx-auto mt-6" />
           </div>
@@ -96,7 +96,7 @@ const ForYouSection = () => {
             >
               <ArrowRight className="w-6 h-6 text-primary shrink-0 mt-1" />
               <p className="font-lora md:font-body text-[19px] md:text-[21px] text-dark-gray md:text-foreground font-light leading-relaxed">
-                Planul tău implică un magazin online de anvergură, o platformă cu mii de utilizatori sau integrări software personalizate.
+                Vrei un magazin online de anvergură, o platformă cu mii de utilizatori sau integrări software personalizate.
               </p>
             </motion.div>
 

@@ -3,21 +3,18 @@ import { Check, ArrowRight } from "lucide-react";
 
 const UnderlinedText = ({ children, delay }: { children: React.ReactNode; delay: number }) => (
   <motion.span
-    className="relative inline"
-    initial="hidden"
-    whileInView="visible"
+    initial={{ backgroundSize: "0% 2px" }}
+    whileInView={{ backgroundSize: "100% 2px" }}
     viewport={{ once: true }}
+    transition={{ delay, duration: 0.8, ease: "easeOut" }}
+    style={{
+      backgroundImage: "linear-gradient(#f97316, #f97316)",
+      backgroundPosition: "0 100%",
+      backgroundRepeat: "no-repeat",
+      paddingBottom: "2px",
+    }}
   >
     {children}
-    <motion.span
-      className="absolute left-0 bottom-0 h-[2px] bg-orange-500 origin-left"
-      variants={{
-        hidden: { scaleX: 0 },
-        visible: { scaleX: 1 }
-      }}
-      transition={{ delay, duration: 0.8, ease: "easeOut" }}
-      style={{ width: "100%" }}
-    />
   </motion.span>
 );
 

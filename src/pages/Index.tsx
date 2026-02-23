@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import AccessibilityWidget from "@/components/AccessibilityWidget";
+import ForYouSection from "@/components/ForYouSection";
 import RequirementsSection from "@/components/RequirementsSection";
 import StepsSection from "@/components/StepsSection";
 import TeamSection from "@/components/TeamSection";
@@ -14,6 +15,7 @@ const Index = () => {
   return (
     <div className="bg-background min-h-screen select-none">
       <HeroSection />
+      <ForYouSection />
       <RequirementsSection />
       <StepsSection />
       <TeamSection />

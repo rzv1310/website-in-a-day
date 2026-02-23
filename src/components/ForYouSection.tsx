@@ -59,6 +59,19 @@ const ForYouSection = () => {
                 Ai o <span className="font-semibold">firmă nouă</span> și vrei să intri în piață cu un impact vizual puternic.
               </p>
             </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4, duration: 0.5 }}
+              className="flex items-start gap-4"
+            >
+              <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
+              <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
+                Ai deja un site, dar care nu-ți aduce clienți (îl refacem complet în doar o zi și îl optimizăm ca să-ți aducă mai multe apeluri).
+              </p>
+            </motion.div>
           </div>
 
           <motion.div

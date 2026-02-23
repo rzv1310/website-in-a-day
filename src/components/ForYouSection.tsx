@@ -79,6 +79,10 @@ const ForYouSection = () => {
             >
               Vreau site-ul meu în 24h!
             </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 mt-4 text-sm text-muted-foreground font-light">
+              <span>✓ Fără costuri ascunse.</span>
+              <span>✓ Include optimizare mobil.</span>
+            </div>
           </motion.div>
         </motion.div>
 

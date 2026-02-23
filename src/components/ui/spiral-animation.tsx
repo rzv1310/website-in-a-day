@@ -178,7 +178,7 @@ class AnimationController {
         
         this.drawTrail(t1)
         
-        const colors = ['#5c3a1e', '#d4760a', '#8b5e34', '#f97316', '#704214']
+        const colors = ['#ef4444', '#dc2626', '#f87171', '#b91c1c', '#ff3333']
         for (let i = 0; i < this.stars.length; i++) {
             ctx.fillStyle = colors[i % colors.length]
             this.stars[i].render(t1, this)
@@ -194,7 +194,7 @@ class AnimationController {
             const f = this.map(i, 0, this.trailLength, 1.1, 0.1)
             const sw = (1.3 * (1 - t1) + 3.0 * Math.sin(Math.PI * t1)) * f
             
-            const trailColors = ['#5c3a1e', '#d4760a', '#8b5e34', '#f97316']
+            const trailColors = ['#ef4444', '#dc2626', '#f87171', '#b91c1c']
             this.ctx.fillStyle = trailColors[i % trailColors.length]
             this.ctx.lineWidth = sw
             

@@ -10,7 +10,7 @@ const SpiralCtaSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-[70vh] md:h-[80vh] overflow-hidden bg-black">
+    <section className="relative w-full h-[70vh] md:h-[80vh] overflow-hidden">
       <div className="absolute inset-0 z-0">
         <SpiralAnimation />
       </div>

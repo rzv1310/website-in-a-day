@@ -10,6 +10,7 @@ import PackagesSection from "@/components/PackagesSection";
 import CtaSection from "@/components/CtaSection";
 import FaqSection from "@/components/FaqSection";
 import CookieConsent from "@/components/CookieConsent";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -26,6 +27,7 @@ const Index = () => {
       <CtaSection />
       <AccessibilityWidget />
       <CookieConsent />
+      <WhatsAppButton />
     </div>
   );
 };

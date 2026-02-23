@@ -29,7 +29,7 @@ const ForYouSection = () => {
               className="flex items-start gap-4"
             >
               <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
-              <p className="font-lora md:font-body text-[19px] md:text-[21px] text-dark-gray md:text-foreground font-light leading-relaxed">
+              <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
                 Ai nevoie de un site de prezentare, funcțional, estetic și publicat rapid, fără să te pierzi în termeni tehnici sau luni de așteptare.
               </p>
             </motion.div>
@@ -42,7 +42,7 @@ const ForYouSection = () => {
               className="flex items-start gap-4"
             >
               <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
-              <p className="font-lora md:font-body text-[19px] md:text-[21px] text-dark-gray md:text-foreground font-light leading-relaxed">
+              <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
                 <span className="font-semibold">Ai o afacere locală care nu vinde produse fizice</span> (de ex.: cabinete medicale, avocați, contabili, psihologi, consultanți, designeri, profesori, instalatori, electricieni, artiști, saloane beauty) sau firme noi care vor să intre în piață cu un impact vizual puternic.
               </p>
             </motion.div>
@@ -95,7 +95,7 @@ const ForYouSection = () => {
               className="flex items-start gap-4"
             >
               <ArrowRight className="w-6 h-6 text-primary shrink-0 mt-1" />
-              <p className="font-lora md:font-body text-[19px] md:text-[21px] text-dark-gray md:text-foreground font-light leading-relaxed">
+              <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
                 Vrei un magazin online de anvergură, o platformă cu mii de utilizatori sau integrări software personalizate.
               </p>
             </motion.div>
@@ -108,7 +108,7 @@ const ForYouSection = () => {
               className="flex items-start gap-4"
             >
               <ArrowRight className="w-6 h-6 text-primary shrink-0 mt-1" />
-              <p className="font-lora md:font-body text-[19px] md:text-[21px] text-dark-gray md:text-foreground font-light leading-relaxed">
+              <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
                 Acestea necesită o etapă suplimentară de planificare și dezvoltare, pe care o putem aborda într-un proiect separat.
               </p>
             </motion.div>

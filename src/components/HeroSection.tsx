@@ -1,11 +1,18 @@
 import { motion } from "framer-motion";
+import { useShaderBackground } from "@/components/hero-animation/shaders";
 import heroBg from "@/assets/hero-bg.jpg";
 
 
 const HeroSection = () => {
+  const canvasRef = useShaderBackground();
+
   return (
     <>
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+      <canvas
+        ref={canvasRef}
+        className="absolute inset-0 w-full h-full object-contain touch-none"
+      />
       <div
         className="absolute inset-0 bg-cover bg-center opacity-15"
         style={{ backgroundImage: `url(${heroBg})` }}

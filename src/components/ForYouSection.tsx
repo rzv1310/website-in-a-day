@@ -43,7 +43,7 @@ const ForYouSection = () => {
             >
               <Check className="w-6 h-6 text-primary shrink-0 mt-1" />
               <p className="font-lora md:font-body text-[19px] md:text-[21px] text-dark-gray md:text-foreground font-light leading-relaxed">
-                Ai o afacere locală care nu vinde produse fizice (cabinete medicale, avocați, contabili, psihologi, consultanți, designeri, profesori, instalatori, electricieni, artiști, saloane beauty) sau firme noi care vor să intre în piață cu un impact vizual puternic.
+                <span className="font-semibold">Ai o afacere locală care nu vinde produse fizice</span> (cabinete medicale, avocați, contabili, psihologi, consultanți, designeri, profesori, instalatori, electricieni, artiști, saloane beauty) sau firme noi care vor să intre în piață cu un impact vizual puternic.
               </p>
             </motion.div>
           </div>

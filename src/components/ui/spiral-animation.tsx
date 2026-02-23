@@ -69,8 +69,8 @@ class AnimationController {
     private setupTimeline() {
         this.timeline
             .to(this, {
-                time: 1,
-                duration: 15,
+                time: 0.8,
+                duration: 12,
                 repeat: -1,
                 ease: "none",
                 onUpdate: () => this.render()
@@ -370,8 +370,8 @@ export function SpiralAnimation() {
         canvas.width = size * dpr
         canvas.height = size * dpr
         
-        canvas.style.width = `${dimensions.width}px`
-        canvas.style.height = `${dimensions.height}px`
+        canvas.style.width = `${size}px`
+        canvas.style.height = `${size}px`
         
         ctx.scale(dpr, dpr)
         
@@ -409,10 +409,11 @@ export function SpiralAnimation() {
     }, [])
     
     return (
-        <div ref={containerRef} className="relative w-full h-full overflow-hidden">
+        <div ref={containerRef} className="relative w-full h-full">
             <canvas
                 ref={canvasRef}
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                style={{ marginTop: '-30px' }}
             />
         </div>
     )

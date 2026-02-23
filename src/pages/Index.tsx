@@ -15,7 +15,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
-    <div className="bg-background min-h-screen select-none">
+    <div className="bg-background min-h-screen select-none" style={{ overflowX: 'clip' }}>
       <HeroSection />
       <ForYouSection />
       <RequirementsSection />

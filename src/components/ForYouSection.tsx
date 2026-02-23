@@ -127,7 +127,7 @@ const ForYouSection = () => {
               rel="noopener noreferrer"
               className="inline-block bg-gradient-gold text-primary-foreground font-light px-10 py-4 rounded-sm tracking-wider uppercase text-[18px] md:text-[17px] hover:opacity-90 transition-opacity"
             >
-              Vreau magazin online!
+              Vreau oferta pentru magazin online!
             </a>
           </motion.div>
         </motion.div>

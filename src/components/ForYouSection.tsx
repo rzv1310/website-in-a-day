@@ -113,7 +113,7 @@ const ForYouSection = () => {
             >
               <ArrowRight className="w-6 h-6 text-primary shrink-0 mt-1" />
               <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
-                Vrei un magazin online de anvergură, o platformă cu mii de utilizatori sau integrări software personalizate.
+                Nu vrei să crești.
               </p>
             </motion.div>
 
@@ -126,7 +126,33 @@ const ForYouSection = () => {
             >
               <ArrowRight className="w-6 h-6 text-primary shrink-0 mt-1" />
               <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
-                Acestea necesită o etapă suplimentară de planificare și dezvoltare, pe care o putem aborda într-un proiect separat.
+                Ești mulțumit cu câți clienți ai acum.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              className="flex items-start gap-4"
+            >
+              <ArrowRight className="w-6 h-6 text-primary shrink-0 mt-1" />
+              <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
+                Nu ți-ai dat seama că dacă nu apari online în 2026 — pur și simplu nu exiști.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4, duration: 0.5 }}
+              className="flex items-start gap-4"
+            >
+              <ArrowRight className="w-6 h-6 text-primary shrink-0 mt-1" />
+              <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
+                Ai nevoie de un <span className="font-semibold">magazin online de anvergură</span>, o platformă cu mii de utilizatori sau integrări software personalizate (acestea necesită o etapă suplimentară de planificare și dezvoltare, pe care o putem aborda într-un proiect separat).
               </p>
             </motion.div>
           </div>

@@ -339,7 +339,9 @@ class Star {
 
 export function SpiralAnimation() {
     const canvasRef = useRef<HTMLCanvasElement>(null)
+    const containerRef = useRef<HTMLDivElement>(null)
     const animationRef = useRef<AnimationController | null>(null)
+    const startedRef = useRef(false)
     const [dimensions, setDimensions] = useState({ width: typeof window !== 'undefined' ? window.innerWidth : 800, height: typeof window !== 'undefined' ? window.innerHeight : 600 })
     
     useEffect(() => {
@@ -373,18 +375,41 @@ export function SpiralAnimation() {
         
         ctx.scale(dpr, dpr)
         
-        animationRef.current = new AnimationController(canvas, ctx, dpr, size)
+        const controller = new AnimationController(canvas, ctx, dpr, size)
+        animationRef.current = controller
+        
+        // Start paused
+        if (!startedRef.current) {
+            controller.pause()
+        }
         
         return () => {
-            if (animationRef.current) {
-                animationRef.current.destroy()
-                animationRef.current = null
-            }
+            controller.destroy()
+            animationRef.current = null
         }
     }, [dimensions])
     
+    // IntersectionObserver to start on scroll
+    useEffect(() => {
+        const container = containerRef.current
+        if (!container) return
+        
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting && !startedRef.current) {
+                    startedRef.current = true
+                    animationRef.current?.resume()
+                }
+            },
+            { threshold: 0.3 }
+        )
+        
+        observer.observe(container)
+        return () => observer.disconnect()
+    }, [])
+    
     return (
-        <div className="relative w-full h-full overflow-hidden">
+        <div ref={containerRef} className="relative w-full h-full overflow-hidden">
             <canvas
                 ref={canvasRef}
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"

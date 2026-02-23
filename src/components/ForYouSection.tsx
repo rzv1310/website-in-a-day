@@ -3,7 +3,7 @@ import { Check, ArrowRight } from "lucide-react";
 
 const ForYouSection = () => {
   return (
-    <section className="py-24 md:py-32 px-6 bg-section-beige">
+    <section id="pentru-tine" className="py-24 md:py-32 px-6 bg-section-beige">
       <div className="max-w-5xl mx-auto">
         {/* Este pentru tine */}
         <motion.div

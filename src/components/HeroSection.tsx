@@ -24,7 +24,7 @@ const HeroSection = () => {
           <h1 className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-tight mb-6 text-foreground px-2">
             <span className="font-normal">Ești pregătit pentru
             <br />
-            aventura</span>
+            experiența</span>
             <br />
             <span className="text-primary italic">
               {"'website in one day' ?".split("").map((char, i) => (
@@ -40,6 +40,9 @@ const HeroSection = () => {
             </span>
           </h1>
           <div className="divider-gold w-24 mx-auto my-8" />
+          <p className="text-[19px] text-dark-gray md:text-foreground leading-relaxed intro-text mt-4">
+            Ai nevoie de un site rapid? Îl ai în 24 de ore.
+          </p>
         </motion.div>
 
         <motion.div
@@ -67,9 +70,6 @@ const HeroSection = () => {
           transition={{ delay: 1.2, duration: 0.8 }}
           className="mt-16 max-w-3xl mx-auto space-y-6"
         >
-            <p className="text-[19px] text-dark-gray md:text-foreground leading-relaxed intro-text">
-            Tocmai ai pășit în locul unde site-urile premium prind viață repede.
-          </p>
             <p className="text-[19px] text-dark-gray md:text-foreground leading-relaxed intro-text">
             Știm că timpul înseamnă bani și vrem să te ajutăm să ai o imagine online de calitate,{" "}
             'la cheie', ca să te apuci de treabă cât mai curând!

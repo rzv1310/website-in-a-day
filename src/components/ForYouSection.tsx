@@ -173,7 +173,7 @@ const ForYouSection = () => {
             >
               <ArrowRight className="w-6 h-6 text-primary shrink-0 mt-1" />
               <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
-                Nu ți-ai dat seama că dacă nu apari online în 2026 - pur și simplu nu exiști.
+                Nu ți-ai dat seama că <UnderlinedText delay={0.8}>dacă nu apari online în 2026 - pur și simplu nu exiști.</UnderlinedText>
               </p>
             </motion.div>
 

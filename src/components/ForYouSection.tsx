@@ -109,7 +109,7 @@ const ForYouSection = () => {
             >
               <ArrowRight className="w-6 h-6 text-primary shrink-0 mt-1" />
               <p className="font-lora md:font-body text-[19px] md:text-[21px] text-dark-gray md:text-foreground font-light leading-relaxed">
-                Acestea necesită o etapă de planificare și dezvoltare, pe care o putem aborda într-un proiect separat.
+                Acestea necesită o etapă suplimentară de planificare și dezvoltare, pe care o putem aborda într-un proiect separat.
               </p>
             </motion.div>
           </div>

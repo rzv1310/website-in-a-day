@@ -139,7 +139,7 @@ const ForYouSection = () => {
             >
               <ArrowRight className="w-6 h-6 text-primary shrink-0 mt-1" />
               <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
-                Nu ți-ai dat seama că dacă nu apari online în 2026 — pur și simplu nu exiști.
+                Nu ți-ai dat seama că dacă nu apari online în 2026 - pur și simplu nu exiști.
               </p>
             </motion.div>
 
@@ -152,7 +152,7 @@ const ForYouSection = () => {
             >
               <ArrowRight className="w-6 h-6 text-primary shrink-0 mt-1" />
               <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
-                Ai nevoie de un <span className="font-semibold">magazin online de anvergură</span>, o platformă cu mii de utilizatori sau integrări software personalizate (acestea necesită o etapă suplimentară de planificare și dezvoltare, pe care o putem aborda într-un proiect separat).
+                Ai nevoie de un magazin online de anvergură, o platformă cu mii de utilizatori sau integrări software personalizate (acestea necesită o etapă suplimentară de planificare și dezvoltare, pe care o putem aborda într-un proiect separat).
               </p>
             </motion.div>
           </div>

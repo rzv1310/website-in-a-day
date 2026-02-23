@@ -47,7 +47,7 @@ const HeroSection = () => {
             </span>
           </h1>
           <div className="divider-gold w-24 mx-auto my-8" />
-          <p className="text-[19px] text-dark-gray md:text-foreground leading-relaxed intro-text mt-4">
+          <p className="text-[19px] text-dark-gray md:text-foreground leading-relaxed intro-text mt-4 font-bold">
             Ai nevoie de un site rapid? Îl ai în 24 de ore.
           </p>
         </motion.div>

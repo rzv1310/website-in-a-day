@@ -34,7 +34,7 @@ const HeroSection = () => {
             experiența</span>
             <br />
             <span className="text-primary italic">
-              {"'website in one day' ?".split("").map((char, i) => (
+              {"'website intr-o zi' ?".split("").map((char, i) => (
                 <motion.span
                   key={i}
                   initial={{ opacity: 0 }}

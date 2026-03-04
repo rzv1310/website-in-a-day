@@ -7,8 +7,10 @@ import {
 } from "@/components/ui/animated-cards-stack";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import bogdanPhoto from "@/assets/bogdan_lamatic.webp";
-import stefanPhoto from "@/assets/stefan.jpg";
-import mihaelaPhoto from "@/assets/mihaela.jpg";
+import stefanPhoto from "@/assets/stefan.webp";
+import mihaelaPhoto from "@/assets/mihaela.webp";
+import mateiPhoto from "@/assets/matei.webp";
+import ancaPhoto from "@/assets/anca-b.webp";
 
 const TESTIMONIALS = [
   {
@@ -36,8 +38,7 @@ const TESTIMONIALS = [
     rating: 5,
     description:
       "Am avut site la cabinet ani de zile. Acum, după o singură zi, am unul de 10 ori mai bun, mai frumos și mai intuitiv pentru pacienții mei. O recomand cu drag pe Andreea, dar toată echipa e de nota 10 !!",
-    avatarUrl:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&auto=format&fit=crop",
+    avatarUrl: mateiPhoto,
   },
   {
     id: "testimonial-4",
@@ -46,8 +47,7 @@ const TESTIMONIALS = [
     rating: 5,
     description:
       "Prețul e corect, livrarea e rapidă și rezultatul e wow. Am recomandat deja 3 prieteni. Dacă vrei un site care aduce clienți, Oana e alegerea.",
-    avatarUrl:
-      "https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=200&auto=format&fit=crop",
+    avatarUrl: ancaPhoto,
   },
   {
     id: "testimonial-5",

@@ -4,61 +4,7 @@ const PackagesSection = () => {
   return (
     <section id="pachete" className="pt-0 pb-24 md:pb-32 px-6 bg-section-white">
       <div className="max-w-5xl mx-auto space-y-16">
-        {/* Gold */}
-        <PackageCard
-          tier="Pachet Gold"
-          title="Ce Primești"
-          description="Un site web complet funcțional, cu design premium, cu până la 8 pagini personalizate, care arată perfect pe orice ecran (laptop, tabletă, mobil) și care e gata să-ți producă bani până la sfârșitul zilei."
-          price="497 €"
-          optional="Opțional, zero stress: Nume domeniu + Găzduire + suport tehnic + security updates = 100 lei/lună."
-          pages={[
-            "Pagina 'Acasă'",
-            "Pagina 'Servicii'",
-            "Pagina 'Despre noi'",
-            "Pagina 'Tarife'",
-            "Pagina 'Contact'",
-          ]}
-          legalPages={[
-            "Termeni și Condiții",
-            "Politica Cookies",
-            "GDPR",
-            "Link ANPC SOL / SAL",
-          ]}
-          included={[
-            "Apel telefonic (30 min) în care pregătim totul pentru ziua lansării.",
-            "Logo design.",
-            "Brand colors, brand fonts.",
-            "Hero Images.",
-            "Research + Content writing.",
-            "Buton WhatsApp.",
-            "Map embed în footer (harta cu adresa ta).",
-            "Optimizare Mobil.",
-            "Configurare e-mail personalizat.",
-            "Formular programare online.",
-            "Robots.txt",
-            "Sitemap.xml",
-            "Structură linkuri interne.",
-            "Favicon.",
-            "3 revizii incluse.",
-            "Suport tehnic 30 zile.",
-          ]}
-          recap="Ca să recapitulăm, acesta este un site personalizat, făcut de la zero pentru tine, construit pentru a-ți transforma businessul și care va fi gata să-ți aducă clienți începând chiar de a doua zi."
-        />
-
-        {/* CTA between packages */}
-        <div className="text-center">
-          <a
-            href="https://wa.me/40742702982"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-[20px] md:text-[18px] hover:opacity-90 transition-opacity"
-          >
-            Vreau Să Mă Programez !
-          </a>
-        </div>
-
         {/* Platinum */}
-        <div className="pt-8" />
         <PackageCard
           highlight
           tier="Pachet Platinum (+1 zi)"
@@ -101,6 +47,60 @@ const PackagesSection = () => {
             className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-[20px] md:text-[18px] hover:opacity-90 transition-opacity"
           >
             Vreau Experiența Platinum !
+          </a>
+        </div>
+
+        {/* Gold */}
+        <div className="pt-8" />
+        <PackageCard
+          tier="Pachet Gold"
+          title="Ce Primești"
+          description="Un site web complet funcțional, cu design premium, cu până la 8 pagini personalizate, care arată perfect pe orice ecran (laptop, tabletă, mobil) și care e gata să-ți producă bani până la sfârșitul zilei."
+          price="497 €"
+          optional="Opțional, zero stress: Nume domeniu + Găzduire + suport tehnic + security updates = 100 lei/lună."
+          pages={[
+            "Pagina 'Acasă'",
+            "Pagina 'Servicii'",
+            "Pagina 'Despre noi'",
+            "Pagina 'Tarife'",
+            "Pagina 'Contact'",
+          ]}
+          legalPages={[
+            "Termeni și Condiții",
+            "Politica Cookies",
+            "GDPR",
+            "Link ANPC SOL / SAL",
+          ]}
+          included={[
+            "Apel telefonic (30 min) în care pregătim totul pentru ziua lansării.",
+            "Logo design.",
+            "Brand colors, brand fonts.",
+            "Hero Images.",
+            "Research + Content writing.",
+            "Buton WhatsApp.",
+            "Map embed în footer (harta cu adresa ta).",
+            "Optimizare Mobil.",
+            "Configurare e-mail personalizat.",
+            "Formular programare online.",
+            "Robots.txt",
+            "Sitemap.xml",
+            "Structură linkuri interne.",
+            "Favicon.",
+            "3 revizii incluse.",
+            "Suport tehnic 30 zile.",
+          ]}
+          recap="Ca să recapitulăm, acesta este un site personalizat, făcut de la zero pentru tine, construit pentru a-ți transforma businessul și care va fi gata să-ți aducă clienți începând chiar de a doua zi."
+        />
+
+        {/* CTA after Gold */}
+        <div className="text-center">
+          <a
+            href="https://wa.me/40742702982"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gradient-gold text-primary-foreground font-light px-12 py-4 rounded-sm tracking-wider uppercase text-[20px] md:text-[18px] hover:opacity-90 transition-opacity"
+          >
+            Vreau Să Mă Programez !
           </a>
         </div>
       </div>

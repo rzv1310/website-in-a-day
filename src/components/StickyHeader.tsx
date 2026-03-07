@@ -5,7 +5,11 @@ const StickyHeader = () => {
   const isMobile = useIsMobile();
 
   const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    const el = document.getElementById(id);
+    if (el) {
+      const y = el.getBoundingClientRect().top + window.scrollY - 56;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
   };
 
   const linkClass =

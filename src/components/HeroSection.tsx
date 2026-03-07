@@ -8,7 +8,7 @@ const HeroSection = () => {
 
   return (
     <>
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-[42px] md:pt-0">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-[42px] md:pt-[25px]">
       <canvas
         ref={canvasRef}
         className="absolute inset-0 w-full h-full object-contain touch-none"

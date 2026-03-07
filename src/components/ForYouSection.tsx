@@ -174,36 +174,7 @@ const ForYouSection = () => {
               </p>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4, duration: 0.5 }}
-              className="flex items-start gap-4"
-            >
-              <ArrowRight className="w-6 h-6 text-primary shrink-0 mt-1" />
-              <p className="text-[19px] text-dark-gray md:text-foreground font-light leading-relaxed intro-text">
-                Ai nevoie de un magazin online de anvergură, o platformă cu mii de utilizatori sau integrări software personalizate (acestea necesită o etapă suplimentară de planificare și dezvoltare, pe care o putem aborda într-un proiect separat).
-              </p>
-            </motion.div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4, duration: 0.5 }}
-            className="text-center mt-12"
-          >
-            <a
-              href="https://wa.me/40742702982"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-gradient-gold text-primary-foreground font-light px-10 py-4 rounded-sm tracking-wider uppercase text-[18px] md:text-[17px] hover:opacity-90 transition-opacity"
-            >
-              Vreau oferta pentru magazin online!
-            </a>
-          </motion.div>
         </motion.div>
       </div>
     </section>

@@ -20,15 +20,14 @@ const Index = () => {
     <div className="bg-background min-h-screen select-none" style={{ overflowX: 'clip' }}>
       <StickyHeader />
       <HeroSection />
-      <ForYouSection />
-      <RequirementsSection />
-      <StepsSection />
-      <TeamSection />
-      <TestimonialsSection />
-      <VideoFeedSection />
-      <SpiralCtaSection />
       <PackagesSection />
+      <StepsSection />
+      <TestimonialsSection />
+      <RequirementsSection />
       <FaqSection />
+      <TeamSection />
+      <ForYouSection />
+      <SpiralCtaSection />
       <CtaSection />
       <Footer />
       <AccessibilityWidget />

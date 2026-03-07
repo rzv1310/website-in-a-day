@@ -1,3 +1,4 @@
+import StickyHeader from "@/components/StickyHeader";
 import HeroSection from "@/components/HeroSection";
 import AccessibilityWidget from "@/components/AccessibilityWidget";
 import ForYouSection from "@/components/ForYouSection";
@@ -17,6 +18,7 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="bg-background min-h-screen select-none" style={{ overflowX: 'clip' }}>
+      <StickyHeader />
       <HeroSection />
       <ForYouSection />
       <RequirementsSection />

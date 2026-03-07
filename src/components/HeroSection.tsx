@@ -8,7 +8,7 @@ const HeroSection = () => {
 
   return (
     <>
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-[42px] md:pt-0">
       <canvas
         ref={canvasRef}
         className="absolute inset-0 w-full h-full object-contain touch-none"
@@ -25,7 +25,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <p className="text-[19px] font-body tracking-[0.3em] uppercase text-primary mb-8">
+          <p className="text-[19px] font-body tracking-[0.3em] uppercase text-primary mb-8 md:hidden">
             Premium Web Design
           </p>
           <h1 className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-tight mb-6 text-foreground px-2">

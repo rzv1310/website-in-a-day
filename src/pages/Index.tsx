@@ -1,3 +1,4 @@
+import StickyHeader from "@/components/StickyHeader";
 import HeroSection from "@/components/HeroSection";
 import AccessibilityWidget from "@/components/AccessibilityWidget";
 import ForYouSection from "@/components/ForYouSection";
